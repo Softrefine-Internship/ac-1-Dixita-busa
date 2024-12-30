@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+  }
+  
+  .section__container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3f6fd;
+  }
+  
+  .main__container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3f6fd;
+    overflow: hidden;
+  }
+  
+  .title__name {
+    font-size: 2.3rem;
+    transition: all 0.5 ease;
+  }
+  .title__name:hover {
+    transform: skew(-10deg);
+    cursor: pointer;
+  }
+  .title__date {
+    font-size: 1.5rem;
+    transition: all 0.5 ease;
+  }
+  .title__date:hover {
+    transform: skew(-10deg);
+    cursor: pointer;
+  }
+  
+  .projects_status_info__numbers {
+    font-size: 1.8rem;
+  }
+  .projects_status_info__des {
+    font-size: 1.2rem;
+    color: grey;
+    margin: 0.5rem 0 0 0;
+  }
+  .projects_status_info__bullet {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.7rem 2.5rem 0 2.3rem;
+  }
+  
+  .header {
+    margin: 2rem 3rem 2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__icon {
+    width: 4rem;
+    height: 4rem;
+    color: black;
+    margin: 0 0 0 0.7rem;
+    transition: all 0.3s ease;
+  }
+  .header__icon:hover {
+    transform: rotate(-90deg);
+    color: red;
+    cursor: pointer;
+  }
+  .header__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 0 -23rem;
+  }
+  .header__search {
+    position: relative;
+    margin: 0 0 0 -25rem;
+  }
+  .header__searchbar {
+    outline: none;
+    height: 2rem;
+    border: none;
+    border-radius: 3rem;
+    padding: 2rem 3.5rem;
+    width: 30rem;
+    appearance: auto;
+  }
+  .header__searchbar:focus {
+    border: none;
+    appearance: auto;
+  }
+  .header__searchicon {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    width: 2rem;
+    height: 2rem;
+    color: black;
+  }
+  .header__loginarea--plusicon {
+    width: 1.8rem;
+    stroke: white;
+    height: 1.8rem;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 0.7rem;
+    transition: all 0.3s ease;
+  }
+  .header__loginarea--plusicon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: yellow;
+  }
+  .header__loginarea--bellicon {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.7rem;
+    transition: all 0.3s ease;
+  }
+  .header__loginarea--bellicon:hover {
+    transform: rotate(-15deg);
+    cursor: pointer;
+    color: rgb(21, 102, 0);
+  }
+  .header__loginarea__bellsection {
+    position: relative;
+  }
+  .header__loginarea--notificationdot {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: red;
+    position: absolute;
+    top: 22%;
+    left: 52%;
+    border-radius: 50%;
+  }
+  .header__loginarea__break {
+    width: 0.1rem;
+    height: 3rem;
+    background-color: grey;
+  }
+  .header__loginarea__userimage {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 0 0 0 1.5rem;
+    transition: all 0.3s ease;
+  }
+  .header__loginarea__userimage:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .header__loginarea__username {
+    font-size: 2rem;
+    margin: 0 0 0 0.5rem;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .icon_profile_flex--icon {
+    width: 2rem;
+    height: 2rem;
+    transition: all 0.3s ease;
+  }
+  .icon_profile_flex--icon:hover {
+    transform: rotate(-90deg) scale(1.2);
+    color: red;
+    cursor: pointer;
+  }
+  .icon_profile_flex--icon--lines {
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.3s ease;
+  }
+  .icon_profile_flex--icon--lines:hover {
+    transform: rotate(-90deg) scale(1.2);
+    color: rgb(255, 0, 191);
+    cursor: pointer;
+  }
+  
+  .cards_flex--card1,
+  .cards_flex--card2,
+  .cards_flex--card3,
+  .cards_flex--card4,
+  .cards_flex--card5,
+  .cards_flex--card6,
+  .cards_flex--card7,
+  .cards_flex--card8 {
+    margin: 2.4rem 0 0 0;
+    width: 25rem;
+    height: 23rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15%;
+  }
+  
+  .cards_flex--card1 {
+    background-color: #ffffff;
+  }
+  
+  .cards_flex--card2 {
+    background-color: #fde5cc;
+  }
+  
+  .cards_flex--card3 {
+    background-color: #b4f1ce;
+  }
+  
+  .cards_flex--card4 {
+    background-color: #ffd3e2;
+  }
+  
+  .cards_flex--card5 {
+    background-color: #edcdf8;
+  }
+  
+  .cards_flex--card6 {
+    background-color: #fde5cc;
+  }
+  
+  .cards_flex--card7 {
+    background-color: #b4f1ce;
+  }
+  
+  .cards_flex--card8 {
+    background-color: #ffffff;
+  }
+  
+  .header__loginarea {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .icon__column__flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 3.5rem 0 0 0;
+  }
+  .icon__column__flex--icons {
+    color: black;
+    width: 2.3rem;
+    height: 2.3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  .icon__column__flex--icons:first-child {
+    background-color: black;
+    color: #ffffff;
+  }
+  .icon__column__flex--icons:hover {
+    color: #ffffff;
+    cursor: pointer;
+    background-color: black;
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .projects_status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 0 0 0;
+  }
+  .projects_status__cards {
+    align-items: center;
+    display: flex;
+    margin: 0 0 0 0;
+  }
+  
+  .project_info_flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon_profile_flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .cards_flex {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    margin: 0 0 5rem 10rem;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 8% 57% 35%;
+  }
+  
+  .icon__column {
+    background-color: #f3f6fd;
+    height: 50rem;
+    overflow: auto;
+  }
+  
+  .usercard__column {
+    background-color: #ffffff;
+    border-radius: 4.3rem;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .usercard__column__area {
+    margin: 3.7rem 4.3rem;
+  }
+  
+  .messages__column {
+    background-color: #f3f6fd;
+    overflow: auto;
+    height: 50rem;
+  }
+  
+  .SCROLLABLE-FIX {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    padding: 0 0 8rem 0;
+  }
+  
+  .progress {
+    overflow-y: auto;
+    margin-top: -2rem;
+  }
+  .progress::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /*# sourceMappingURL=style.css.map */

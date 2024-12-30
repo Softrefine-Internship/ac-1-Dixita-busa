@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+  }
+  .background__container {
+    width: 100vw;
+    height: 100vh;
+  
+    background-color: $color-main-bg;
+  }
+  .main__container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  
+    background-color: $color-main-bg;
+  
+    overflow: hidden;
+  }

@@ -3,7 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Test 4</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
-  <body></body>
+  <body>
+    <section class="section__container">
+      <main class="main__container">
+        <header class="header">
+          <ion-icon class="header__icon" name="reorder-three-outline"></ion-icon>
+          <h1 class="header__title">Portfolio</h1>
+          <div class="header__search">
+            <input class="header__searchbar" type="search" placeholder="Search"/>
+              <span>
+                <ion-icon class="header__searchicon" name="search-outline"></ion-icon>
+              </span>
+          </div>
+
+          <!--------------------- LOGIN --------------------->
+          <section class="header__loginarea">
+            <ion-icon class="header__loginarea--plusicon" name="add-outline"></ion-icon>
+
+            <!--------------------- BELL --------------------->
+            <div class="header__loginarea__bellsection">
+              <ion-icon class="header__loginarea--bellicon" name="notifications-outline"></ion-icon>
+              <span>
+                <div class="header__loginarea--notificationdot"></div>
+              </span>
+            </div>
+
+          <!--------------------- BREAK LINE --------------------->
+            <div class="header__loginarea__break"></div>
+            <img class="header__loginarea__userimage" src="images/users/c.jpg" alt="userimage"/>
+            <h1 class="header__loginarea__username">Hira R</h1>
+          </section>
+        </header>
+        <section class="grid-container">
+          <div class="icon__column">
+            <section class="icon__column__flex">
+              <ion-icon id="homeboxIcon" class="icon__column__flex--icons" name="home-outline"></ion-icon>
+                <ion-icon class="icon__column__flex--icons" name="person-circle-outline"></ion-icon>
+                <ion-icon id="chatboxIcon" class="icon__column__flex--icons" name="chatbox-outline"></ion-icon>
+                <ion-icon class="icon__column__flex--icons" name="calendar-outline"></ion-icon>
+                <ion-icon class="icon__column__flex--icons" name="time-outline"></ion-icon>
+                <ion-icon class="icon__column__flex--icons" name="settings-outline"></ion-icon>
+            </section>
+          </div>
+
+          <div class="usercard__column">
+            <section class="SCROLLABLE-FIX">
+              <section class="usercard__column__area">
+                <main class="title">
+                  <h1 class="title__name">Projects</h1>
+                  <h1 class="title__date">July,2020</h1>
+                </main>
+                <div class="projects_status">
+                  <section class="projects_status__cards">
+                    <div class="projects_status_info">
+                      <h1 class="projects_status_info__numbers">45</h1>
+                      <div class="project_info_flex">
+                        <h1 class="projects_status_info__des">In Progress</h1>
+                        <ion-icon class="projects_status_info__bullet bottom" name="radio-button-off-outline"></ion-icon>
+                      </div>
+                    </div>
+                    <div>
+                      <h1 class="projects_status_info__numbers">12</h1>
+                      <div class="project_info_flex">
+                        <h1 class="projects_status_info__des">In Progress</h1>
+                        <ion-icon class="projects_status_info__bullet bottom" name="radio-button-off-outline"></ion-icon>
+                      </div>
+                    </div>
+                    <div>
+                      <h1 class="projects_status_info__numbers">10</h1>
+                      <div class="project_info_flex">
+                        <h1 class="projects_status_info__des">Upcoming</h1>
+                        <ion-icon class="projects_status_info__bullet bottom" name="radio-button-off-outline"></ion-icon>
+                      </div>
+                    </div>
+                    <div>
+                      <h1 class="projects_status_info__numbers">67</h1>
+                      <div class="project_info_flex">
+                        <h1 class="projects_status_info__des">Total Project</h1>
+                      </div>
+                    </div>
+                  </section>
+                  <div class="icon_profile_flex">
+                    <ion-icon class="icon_profile_flex--icon--lines" name="reorder-three-outline"></ion-icon>
+                    <ion-icon class="icon_profile_flex--icon" name="grid-outline"></ion-icon>
+                  </div>
+                </div>
+              </section>
+
+              <!---------------------  CARD SECTION --------------------->
+              <section class="progress">
+                <article class="cards_flex">
+                  <div class="cards_flex--card1"></div>
+                  <div class="cards_flex--card2"></div>
+                </article>
+
+                <article class="cards_flex">
+                  <div class="cards_flex--card3"></div>
+                  <div class="cards_flex--card4"></div>
+                </article>
+                <article class="cards_flex">
+                  <div class="cards_flex--card5"></div>
+                  <div class="cards_flex--card6"></div>
+                </article>
+                <article class="cards_flex">
+                  <div class="cards_flex--card7"></div>
+                  <div class="cards_flex--card8"></div>
+                </article>
+              </section>
+            </section>
+          </div>
+          <div class="messages__column">messages__column</div>
+        </section>
+      </main>
+    </section>
+  </body>
 </html>
