@@ -1,25 +1,37 @@
 .icon_profile_flex {
-    &--icon {
-      width: 2rem;
-      height: 2rem;
+  &--icon {
+    width: 2rem;
+    height: 2rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: rotate(-90deg) scale(1.2);
+      color: red;
+      cursor: pointer;
+    }
+
+    &--lines {
+      width: 3rem;
+      height: 3rem;
       transition: all 0.3s ease;
-  
+
       &:hover {
         transform: rotate(-90deg) scale(1.2);
-        color: red;
+        color: rgb(255, 0, 191);
         cursor: pointer;
-      }
-  
-      &--lines {
-        width: 3rem;
-        height: 3rem;
-        transition: all 0.3s ease;
-  
-        &:hover {
-          transform: rotate(-90deg) scale(1.2);
-          color: rgb(255, 0, 191);
-          cursor: pointer;
-        }
       }
     }
   }
+}
+.two__vertical__dots {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.dot {
+  background-color: black;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+}

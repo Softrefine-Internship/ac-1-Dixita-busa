@@ -1,42 +1,50 @@
 .grid-container {
-    display: grid;
-    grid-template-columns: 8% 57% 35%;
+  display: grid;
+  grid-template-columns: 8% 57% 35%;
+  overflow: visible;
+}
+
+.icon__column {
+  background-color: $color-main-bg;
+  height: 50rem;
+  overflow: auto;
+}
+
+.usercard__column {
+  background-color: $color-white;
+  border-radius: 4.3rem;
+  height: 100vh;
+  overflow: hidden;
+  &__area {
+    margin: 3.7rem 4.3rem;
   }
-  
-  .icon__column {
-    background-color: $color-main-bg;
-    height: 50rem;
-    overflow: auto;
+}
+
+.messages__column {
+  background-color: $color-main-bg;
+  overflow: visible;
+  height: 100vh;
+}
+
+.SCROLLABLE-FIX {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  padding: 0 0 8rem 0;
+}
+
+.progress {
+  overflow-y: auto;
+  margin-top: -2rem;
+
+  &::-webkit-scrollbar {
+    display: none;
   }
-  
-  .usercard__column {
-    background-color: $color-white;
-    border-radius: 4.3rem;
-    height: 100vh;
-    overflow: hidden;
-    &__area {
-      margin: 3.7rem 4.3rem;
-    }
+}
+.messages {
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
   }
-  
-  .messages__column {
-    background-color: $color-main-bg;
-  
-    overflow: auto;
-    height: 50rem;
-  }
-  .SCROLLABLE-FIX {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    height: 100vh;
-    padding: 0 0 8rem 0;
-  }
-  
-  .progress {
-    overflow-y: auto;
-    margin-top: -2rem;
-  
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
+}
