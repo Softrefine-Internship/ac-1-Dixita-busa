@@ -1,25 +1,88 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  font-size: 62.5%;
+  @include responsive(phone) {
   }
-  
-  html {
-    font-family: sans-serif;
-    font-size: 62.5%;
+  @include responsive(tab-small) {
+    font-size: 75%;
   }
-  .section__container {
-    width: 100vw;
-    height: 100vh;
-  
-    background-color: $color-main-bg;
+  @include responsive(tab-large) {
+    font-size: 88%;
   }
-  .main__container {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-  
-    background-color: $color-main-bg;
-  
-    overflow: hidden;
+  @include responsive(big-screens) {
+    font-size: 90%;
   }
+  @media (min-width: 62.5em) and (max-width: 79em) {
+    font-size: 60%;
+  }
+  @media (min-width: 50em) and (max-width: 62.4em) {
+    font-size: 45%;
+  }
+  @media (min-width: 37.5em) and (max-width: 49.93em) {
+    font-size: 35%;
+  }
+
+  @media (min-width: 3em) and (max-width: 37.43em) {
+    font-size: 35%;
+  }
+  @media (min-width: 25em) and (max-width: 37.43em) {
+    font-size: 40%;
+  }
+  @media (min-width: 19em) and (max-width: 21.5em) {
+    font-size: 30%;
+  }
+  @media (min-width: 300px) and (max-width: 400px) {
+    font-size: 38%;
+  }
+}
+.section__container {
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-main-bg;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @media (max-width: 599px) {
+    height: 90vh;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+.main__container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-main-bg;
+  overflow: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @media (max-width: 599px) {
+    height: 90vh;
+    height: auto;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+}
+html,
+body {
+  overflow: hidden;
+}
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+.scrollable {
+  overflow: scroll;
+}

@@ -1,19 +1,20 @@
-// *********ABSTRACT FILES **********
+// ---------- ABSTRACT FILES ---------- //
 
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-// *********BASE FILES **********
+// ---------- BASE FILES ---------- //
 
 @import "base/base";
 @import "base/typography";
-@import "base/header.scss";
+@import "base/header";
 
-// *********COMPONENTS FILES **********
+// ---------- COMPONENTS FILES ---------- //
 
-@import "components/icons.scss";
-@import "components/cards.scss";
+@import "components/icons";
+@import "components/cards";
 
-// *********LAYOUT FILES **********
+// ---------- LAYOUT FILES ---------- //
+
 @import "layout/flex";
 @import "layout/grid";

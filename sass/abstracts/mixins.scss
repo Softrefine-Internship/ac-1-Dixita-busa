@@ -1,0 +1,23 @@
+@mixin responsive($break) {
+    @if $break == phone {
+      @media (max-width: 37.5em) {
+        @content;
+      }
+    }
+    @if $break == tab-small {
+      @media (min-width: 79.5em) and (max-width: 103em) {
+        @content;
+      }
+    }
+    @if $break == tab-large {
+      @media (min-width: 103.5em) and (max-width: 125em) {
+        @content;
+      }
+    }
+    @if $break == big-screens {
+      @media (min-width: 125em) {
+        @content;
+      }
+    }
+  }
+  
