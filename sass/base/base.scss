@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 html {
-  font-family: sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   font-size: 62.5%;
+
   @include responsive(phone) {
   }
   @include responsive(tab-small) {
@@ -17,6 +21,16 @@ html {
   @include responsive(big-screens) {
     font-size: 90%;
   }
+  
+  @media (max-width: 1200px) {
+    font-size: 9px;
+  }
+  @media (max-width: 900px) {
+    font-size: 8px;
+  }
+  @media (max-width: 600px) {
+    font-size: 7px;
+  }
   @media (min-width: 62.5em) and (max-width: 79em) {
     font-size: 60%;
   }
@@ -26,7 +40,6 @@ html {
   @media (min-width: 37.5em) and (max-width: 49.93em) {
     font-size: 35%;
   }
-
   @media (min-width: 3em) and (max-width: 37.43em) {
     font-size: 35%;
   }
@@ -41,36 +54,68 @@ html {
   }
 }
 .section__container {
-  width: 100vw;
-  height: 100vh;
-  background-color: $color-main-bg;
-  overflow-x: hidden;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  @media (max-width: 599px) {
-    height: 90vh;
-    overflow-x: hidden;
-    &::-webkit-scrollbar {
-      display: none;
-    }
+  width: 100%;
+  height: 100svh;
+  min-height: 90svh;
+  background: #F3F6FD;
+  margin: 0 auto;
+  border-radius: 3rem;
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.174);
+  padding-top: 2rem;
+  padding-bottom: 0;
+  overflow: hidden;
+  @media (max-width: 800px) {
+      margin: 0;
+      width: 100%;
   }
 }
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100svh;
+  background: $color7 !important;
+}
+img,
+svg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
 .main__container {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: $color-main-bg;
-  overflow: hidden;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  @media (max-width: 599px) {
-    height: 90vh;
-    height: auto;
-    overflow: auto;
+    display: flex;
+    width: 100%;
+    height: 110%;
+    position: relative;
+}
+.usercard__column {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex
+}
+.usercard__column {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    height: 80.5%;
+    width: 100%;
+    padding-bottom: 5rem;
+    flex-wrap: wrap;
+    gap: 5rem;
+    overflow-y: auto;
     overflow-x: hidden;
-  }
+    align-content: baseline;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    @media (max-width: 1000px) {
+        padding-block: 3rem;
+        padding-bottom: 8rem;
+        height: 91svh;
+        gap: 3rem;
+    }
+    @media (max-width: 800px) {
+        padding-bottom: 15rem;
+    }
 }
 html,
 body {

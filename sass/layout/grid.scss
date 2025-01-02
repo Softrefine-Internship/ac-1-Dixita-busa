@@ -49,8 +49,22 @@
   height: 100vh;
   overflow: hidden;
   margin: 0 1rem 0 0rem;
+  width: 65%;
+  height: 85%;
+  background: darken($color3, 1%);
+  border-radius: 3rem 3rem 0 0 ;
+  padding-inline: 5rem;
+
   &__area {
     margin: 3.7rem 4.3rem;
+  }
+  @media (max-width: 1000px){
+    width: 55%;
+    height: 105%;
+  }
+  @media (max-width: 800px){
+    width: 100%;
+    padding-inline: 3rem;
   }
   @media (max-width: 599px) {
     height: 100vh;

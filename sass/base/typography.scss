@@ -14,14 +14,41 @@
     }
   }
 }
+&__status {
+  @include flex(5rem);
+  padding-bottom: 2rem;
+  @media (max-width: 1005px) {
+      gap: 1rem;
+  }
+  @media (max-width: 800px) {
+      gap: 5rem;
+  }
+  @media (max-width: 460px) {
+      gap: 2rem;
+  }
+  @media (max-width:370px) {
+      gap: .5rem;
+  }
+}
 .projects_status_info {
   &__numbers {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    font-weight: bold;
   }
   &__des {
     font-size: 1.2rem;
-    color: $color-grey;
-    margin: 0.5rem 0 0 0;
+    position: relative;
+    &::before{
+      height: .5rem;
+      aspect-ratio: 1/1;
+      border: .2rem solid black;
+      border-radius: 50%;
+      bottom:0px;
+      right: -50%;
+      @media(max-width:1000px){
+        display: none;
+      }
+    }
   }
   &__bullet {
     width: 0.8rem;

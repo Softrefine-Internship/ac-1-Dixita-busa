@@ -68,7 +68,7 @@ html {
 }
 @media (max-width: 599px) {
   .section__container {
-    height: 100vh;
+    height: 90vh;
     overflow-x: hidden;
   }
   .section__container::-webkit-scrollbar {
@@ -76,11 +76,9 @@ html {
   }
 }
 .main__container {
-  border-radius: 30px;
   position: absolute;
-  width: 95vw;
-  height: 90vh;
-  margin: 4rem;
+  width: 100vw;
+  height: 100vh;
   background-color: #f3f6fd;
   overflow: hidden;
 }
@@ -110,30 +108,31 @@ body {
   overflow: scroll;
 }
 .title__name {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
+  transition: all 0.5 ease;
 }
 .title__name:hover {
   cursor: pointer;
 }
 .title__date {
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: all 0.5 ease;
 }
 .title__date:hover {
   cursor: pointer;
 }
-.project__status_info__numbers {
-  font-size: 1.3rem;
+.projects_status_info__numbers {
+  font-size: 1.8rem;
 }
-.project__status_info__des {
-  font-size: 1rem;
+.projects_status_info__des {
+  font-size: 1.2rem;
   color: grey;
   margin: 0.5rem 0 0 0;
 }
-.project__status_info__bullet {
-  width: 0.6rem;
-  height: 0.6rem;
-  margin: 0.5rem 2.3rem 0 2.1rem;
+.projects_status_info__bullet {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0.7rem 2.5rem 0 2.3rem;
 }
 .card__info {
   display: flex;
@@ -141,12 +140,12 @@ body {
   justify-content: space-between;
 }
 .card__info--date {
-  font-size: 1rem;
-  color: rgb(128, 128, 128);
+  font-size: 1.4rem;
+  color: grey;
   font-weight: 600;
 }
 .card__info--icon {
-  width: 1.7rem;
+  width: 2rem;
   height: 1.5rem;
   color: black;
   fill: rgb(0, 0, 0);
@@ -157,14 +156,14 @@ body {
   background-color: rgba(145, 145, 145, 0.61);
 }
 .nav {
-  margin: 1.5rem 2rem 1.5rem 2rem;
+  margin: 2rem 3rem 2rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 @media (min-width: 3em) and (max-width: 37.43em) {
   .nav {
-    margin: 1.5rem 2.5rem 1.5rem 0rem;
+    margin: 2rem 3rem 2rem 0rem;
   }
 }
 @media (min-width: 500px) and (max-width: 552px) {
@@ -199,8 +198,8 @@ body {
   }
 }
 .nav__icon {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   color: rgb(0, 0, 0);
   margin: 0 0 0 0.7rem;
   transition: all 0.3s ease;
@@ -229,7 +228,7 @@ body {
   }
 }
 .nav__title {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0 0 0 5.5rem;
   font-weight: 700;
   position: sticky;
@@ -294,14 +293,14 @@ body {
 }
 .nav__searchbar {
   outline: none;
-  height: 1.6rem;
+  height: 2rem;
   border: none;
   border-radius: 3rem;
-  padding: 1.7rem 4rem;
-  width: 32rem;
+  padding: 2rem 3.5rem;
+  width: 30rem;
   appearance: auto;
   margin: 0 0 0 7rem;
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 @media (min-width: 3em) and (max-width: 37.43em) {
@@ -319,12 +318,12 @@ body {
 }
 .nav__searchicon {
   position: absolute;
-  top: 30%;
+  top: 22%;
   left: 3%;
   margin: 0 0 0 7rem;
-  width: 1.6rem;
-  height: 1.6rem;
-  color: rgb(88, 88, 88);
+  width: 2rem;
+  height: 2rem;
+  color: rgb(0, 0, 0);
 }
 @media (min-width: 3em) and (max-width: 37.43em) {
   .nav__searchicon {
@@ -352,9 +351,9 @@ body {
   }
 }
 .nav__login--plus {
-  height: 1rem;
-  width: 1rem;
+  width: 1.8rem;
   stroke: white;
+  height: 1.8rem;
   color: white;
   background-color: rgb(0, 0, 0);
   border-radius: 50%;
@@ -366,8 +365,8 @@ body {
   cursor: pointer;
 }
 .nav__login--bell {
-  height: 2.6rem;
-  width: 2.6rem;
+  width: 3rem;
+  height: 3rem;
   padding: 0.7rem;
   transition: all 0.3s ease;
 }
@@ -379,8 +378,8 @@ body {
   position: relative;
 }
 .nav__login--circle {
-  width: 0.6rem;
-  height: 0.6rem;
+  width: 0.8rem;
+  height: 0.8rem;
   background-color: red;
   position: absolute;
   top: 22%;
@@ -388,15 +387,15 @@ body {
   border-radius: 50%;
 }
 .nav__login__line {
-  height: 3.4rem;
-  width: 0.2rem;
-  background-color: rgb(214, 214, 214);
+  width: 0.1rem;
+  height: 3rem;
+  background-color: grey;
 }
 .nav__login__image {
-  width: 3rem;
-  height: 3.2rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
-  margin: 0 0 0 2rem;
+  margin: 0 0 0 1.5rem;
   transition: all 0.3s ease;
 }
 .nav__login__image:hover {
@@ -404,14 +403,31 @@ body {
   cursor: pointer;
 }
 .nav__login__name {
-  font-size: 1.6rem;
-  margin: 0 0.3rem 0 0.5rem;
+  font-size: 2rem;
+  margin: 0 0 0 0.5rem;
 }
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
-
+.black-background {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.black-background {
+  color: white;
+}
+#chatboxIcon.black-background {
+  color: white;
+}
+.hide-bg #homeboxIcon {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+}
 @media (min-width: 300px) and (max-width: 600px) {
   .nav__iconset {
     width: 100%;
@@ -426,7 +442,7 @@ body {
     display: none;
   }
   .space {
-    margin-right: 2rem;
+    margin-right: 2.5rem;
   }
 }
 @media (min-width: 3em) and (max-width: 37.43em) {
@@ -479,7 +495,7 @@ body {
   }
 }
 .icon_profile_flex--icon {
-  width: 1.7rem;
+  width: 2rem;
   height: 2rem;
   transition: all 0.3s ease;
 }
@@ -487,7 +503,7 @@ body {
   cursor: pointer;
 }
 .icon_profile_flex--icon--lines {
-  width: 3.5rem;
+  width: 3rem;
   height: 3rem;
   transition: all 0.3s ease;
 }
@@ -502,8 +518,8 @@ body {
 }
 .dot {
   background-color: black;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.7rem;
+  height: 0.7rem;
   border-radius: 50%; 
 }
 .cards_flex--card1,
@@ -514,9 +530,9 @@ body {
 .cards_flex--card6,
 .cards_flex--card7,
 .cards_flex--card8 {
-  margin: 2rem 1.3rem -3rem -0.5rem;
-  width: 10rem;
-  height: 20rem;
+  margin: 2.4rem 0 -2rem 0;
+  width: 25rem;
+  height: 23rem;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   border-radius: 15%;
 }
@@ -626,7 +642,7 @@ body {
   background-color: #fde5cc;
 }
 .card2 {
-  padding: 1.5rem 1.5rem;
+  padding: 2rem 1.8rem;
   position: relative;
 }
 .card2:hover {
@@ -637,7 +653,7 @@ body {
   position: absolute;
   width: 85%;
   height: 0.3rem;
-  bottom: -1rem;
+  bottom: -1.3rem;
   border-radius: 2rem;
   opacity: 0;
   visibility: hidden;
@@ -650,12 +666,12 @@ body {
   position: absolute;
   width: 65%;
   height: 0.3rem;
-  bottom: -2rem;
   background-color: #eb9d4a;
   opacity: 0;
   visibility: hidden;
   transition: all 0 ease-in-out;
   margin: 0 0 0 2.6rem;
+  bottom: -2.3rem;
   border-radius: 2rem;
   transform: translate(-50%, -50%);
 }
@@ -688,13 +704,13 @@ body {
   font-size: 1.7rem;
   color: black;
   text-align: center;
-  margin: 1.5rem 0 0 0;
+  margin: 2rem 0 0 0;
   font-family: "Roboto", system-ui;
   font-weight: 800;
   font-style: normal;
 }
 .card2__name {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: grey;
   text-align: center;
   margin: 0.5rem 0 0 0;
@@ -703,7 +719,7 @@ body {
   font-style: normal;
 }
 .card2__subname {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: black;
   margin: 1rem 0 0.5rem 0;
   font-family: "Roboto", system-ui;
@@ -711,7 +727,7 @@ body {
   font-style: normal;
 }
 .card2__percentage {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: black;
   text-align: right;
   margin: 0.5rem 0 0.5rem 0;
@@ -813,9 +829,15 @@ body {
   justify-content: space-between;
 }
 .card2__info--date {
-  font-size: 1.em;
+  font-size: 1.4rem;
   color: grey;
   font-weight: 600;
+}
+.card2__info--icon {
+  width: 2rem;
+  height: 1.5rem;
+  color: black;
+  fill: black;
 }
 .image_button_flex2 {
   display: flex;
@@ -823,7 +845,6 @@ body {
   justify-content: space-between;
 }
 .image_button_flex2--plus2 {
-  margin-left: 0.5rem;
   width: 2.5rem;
   height: 2.5rem;
   fill: #eb9d4a;
@@ -833,7 +854,6 @@ body {
   transform: scale(1.2);
 }
 .image_button_flex2--button2 {
-  font-size: 1rem;
   color: rgb(42, 219, 250);
   background-color: #ffffff;
   color: #eb9d4a;
@@ -877,7 +897,6 @@ body {
   transform: scale(1.2);
   filter: contrast(1.5);
 }
-
 .cards_flex--card3 {
   background-color: #b4f1ce;
 }
@@ -893,7 +912,7 @@ body {
   position: absolute;
   width: 85%;
   height: 0.3rem;
-  bottom: -0rem;
+  bottom: -1.3rem;
   border-radius: 2rem;
   opacity: 0;
   visibility: hidden;
@@ -911,7 +930,7 @@ body {
   visibility: hidden;
   transition: all 0 ease-in-out;
   margin: 0 0 0 2.6rem;
-  bottom: -1rem;
+  bottom: -2.3rem;
   border-radius: 2rem;
   transform: translate(-50%, -50%);
 }
@@ -945,13 +964,13 @@ body {
   font-size: 1.7rem;
   color: black;
   text-align: center;
-  margin: 1.5rem 0 0 0;
+  margin: 2rem 0 0 0;
   font-family: "Roboto", system-ui;
   font-weight: 800;
   font-style: normal;
 }
 .card3__name {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: grey;
   text-align: center;
   margin: 0.5rem 0 0 0;
@@ -960,7 +979,7 @@ body {
   font-style: normal;
 }
 .card3__subname {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: black;
   margin: 1rem 0 0.5rem 0;
   font-family: "Roboto", system-ui;
@@ -968,7 +987,7 @@ body {
   font-style: normal;
 }
 .card3__percentage {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: black;
   text-align: right;
   margin: 0.5rem 0 0.5rem 0;
@@ -1070,12 +1089,12 @@ body {
   justify-content: space-between;
 }
 .card3__info--date {
-  font-size: 1.em;
+  font-size: 1.4rem;
   color: grey;
   font-weight: 600;
 }
 .card3__info--icon {
-  width: 1.7rem;
+  width: 2rem;
   height: 1.5rem;
   color: black;
   fill: black;
@@ -1086,7 +1105,6 @@ body {
   justify-content: space-between;
 }
 .image_button_flex3--plus3 {
-  margin-left: 0.5rem;
   width: 2.5rem;
   height: 2.5rem;
   fill: #0edb67;
@@ -1096,7 +1114,6 @@ body {
   transform: scale(1.2);
 }
 .image_button_flex3--button3 {
-  font-size: 1rem;
   color: rgb(42, 219, 250);
   background-color: #ffffff;
   color: #17e470;
@@ -1155,7 +1172,7 @@ body {
   position: absolute;
   width: 85%;
   height: 0.3rem;
-  bottom: -0rem;
+  bottom: -1.3rem;
   border-radius: 2rem;
   opacity: 0;
   visibility: hidden;
@@ -1173,7 +1190,7 @@ body {
   visibility: hidden;
   transition: all 0 ease-in-out;
   margin: 0 0 0 2.6rem;
-  bottom: -1rem;
+  bottom: -2.3rem;
   border-radius: 2rem;
   transform: translate(-50%, -50%);
 }
@@ -1207,13 +1224,13 @@ body {
   font-size: 1.7rem;
   color: black;
   text-align: center;
-  margin: 1.5rem 0 0 0;
+  margin: 2rem 0 0 0;
   font-family: "Roboto", system-ui;
   font-weight: 800;
   font-style: normal;
 }
 .card4__name {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: grey;
   text-align: center;
   margin: 0.5rem 0 0 0;
@@ -1222,7 +1239,7 @@ body {
   font-style: normal;
 }
 .card4__subname {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: black;
   margin: 1rem 0 0.5rem 0;
   font-family: "Roboto", system-ui;
@@ -1230,7 +1247,7 @@ body {
   font-style: normal;
 }
 .card4__percentage {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: black;
   text-align: right;
   margin: 0.5rem 0 0.5rem 0;
@@ -1339,12 +1356,12 @@ body {
   justify-content: space-between;
 }
 .card4__info--date {
-  font-size: 1.em;
+  font-size: 1.4rem;
   color: grey;
   font-weight: 600;
 }
 .card4__info--icon {
-  width: 1.7rem;
+  width: 2rem;
   height: 1.5rem;
   color: black;
   fill: black;
@@ -1355,7 +1372,6 @@ body {
   justify-content: space-between;
 }
 .image_button_flex4--plus4 {
-  margin-left: 0.5rem;
   width: 2.5rem;
   height: 2.5rem;
   fill: #ee4d82;
@@ -1365,7 +1381,6 @@ body {
   transform: scale(1.2);
 }
 .image_button_flex4--button4 {
-  font-size: 1rem;
   color: rgb(42, 219, 250);
   background-color: #ffffff;
   color: #ee4d82;
@@ -1421,7 +1436,7 @@ body {
   position: absolute;
   width: 85%;
   height: 0.3rem;
-  bottom: -0rem;
+  bottom: -1.3rem;
   border-radius: 2rem;
   opacity: 0;
   visibility: hidden;
@@ -1444,7 +1459,7 @@ body {
   visibility: hidden;
   transition: all 0 ease-in-out;
   margin: 0 0 0 2.6rem;
-  bottom: -1rem;
+  bottom: -2.3rem;
   border-radius: 2rem;
   transform: translate(-50%, -50%);
 }
@@ -1477,13 +1492,13 @@ body {
   font-size: 1.7rem;
   color: black;
   text-align: center;
-  margin: 1.5rem 0 0 0;
+  margin: 2rem 0 0 0;
   font-family: "Roboto", system-ui;
   font-weight: 800;
   font-style: normal;
 }
 .card5__name {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: grey;
   text-align: center;
   margin: 0.5rem 0 0 0;
@@ -1492,7 +1507,7 @@ body {
   font-style: normal;
 }
 .card5__subname {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: black;
   margin: 1rem 0 0.5rem 0;
   font-family: "Roboto", system-ui;
@@ -1500,7 +1515,7 @@ body {
   font-style: normal;
 }
 .card5__percentage {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: black;
   text-align: right;
   margin: 0.5rem 0 0.5rem 0;
@@ -1589,7 +1604,6 @@ body {
   background-color: #ee4d82;
   border-radius: 0.5rem;
 }
-
 .fixglitch {
   margin-top: 13rem;
 }
@@ -1671,12 +1685,12 @@ body {
   justify-content: space-between;
 }
 .card5__info--date {
-  font-size: 1.em;
+  font-size: 1.4rem;
   color: grey;
   font-weight: 600;
 }
 .card5__info--icon {
-  width: 1.7rem;
+  width: 2rem;
   height: 1.5rem;
   color: black;
   fill: black;
@@ -1687,7 +1701,6 @@ body {
   justify-content: space-between;
 }
 .image_button_flex5--plus5 {
-  margin-left: 0.5rem;
   width: 2.5rem;
   height: 2.5rem;
   fill: #ee4d82;
@@ -1697,7 +1710,6 @@ body {
   transform: scale(1.2);
 }
 .image_button_flex5--button5 {
-  font-size: 1rem;
   color: rgb(42, 219, 250);
   background-color: #ffffff;
   color: #ee4d82;
@@ -1765,7 +1777,7 @@ body {
   position: absolute;
   width: 85%;
   height: 0.3rem;
-  bottom: -0rem;
+  bottom: -1.3rem;
   border-radius: 2rem;
   opacity: 0;
   visibility: hidden;
@@ -1783,7 +1795,7 @@ body {
   visibility: hidden;
   transition: all 0 ease-in-out;
   margin: 0 0 0 2.6rem;
-  bottom: -1rem;
+  bottom: -2.3rem;
   border-radius: 2rem;
   transform: translate(-50%, -50%);
 }
@@ -1816,13 +1828,13 @@ body {
   font-size: 1.7rem;
   color: black;
   text-align: center;
-  margin: 1.5rem 0 0 0;
+  margin: 2rem 0 0 0;
   font-family: "Roboto", system-ui;
   font-weight: 800;
   font-style: normal;
 }
 .card__name {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: grey;
   text-align: center;
   margin: 0.5rem 0 0 0;
@@ -1831,7 +1843,7 @@ body {
   font-style: normal;
 }
 .card__subname {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: black;
   margin: 1rem 0 0.5rem 0;
   font-family: "Roboto", system-ui;
@@ -1839,7 +1851,7 @@ body {
   font-style: normal;
 }
 .card__percentage {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: black;
   text-align: right;
   margin: 0.5rem 0 0.5rem 0;
@@ -1953,14 +1965,14 @@ body {
   margin: 0 0 0 3rem;
 }
 .messages_card__messages {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 300;
   color: rgb(59, 59, 59);
   line-height: 1.3;
   margin-right: 1rem;
 }
 .messages_card__date {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 300;
   text-align: right;
   margin: 0 1.5rem 0 0;
@@ -1980,13 +1992,13 @@ body {
   margin: 0 0 0 3rem;
 }
 .messages_card1__messages {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 300;
   color: rgb(59, 59, 59);
   line-height: 1.3;
 }
 .messages_card1__date {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 300;
   text-align: right;
   margin: 0 1.5rem 0 0;
@@ -2052,7 +2064,7 @@ body {
 .searchicon:hover {
   cursor: pointer;
 }
-.in_project_section_flex {
+.in_projects_section_flex {
   display: flex;
   align-items: center;
 }
@@ -2086,8 +2098,8 @@ body {
   display: flex;
 }
 .client__img {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4.8rem;
+  height: 4.8rem;
   border-radius: 50%;
   margin: 2rem 1.5rem 0 2rem;
 }
@@ -2142,7 +2154,6 @@ body {
   display: grid;
   grid-template-rows: auto 1fr;
   height: 100vh;
-  width: 35vw;
   padding: 0 0 8rem 0rem;
   font-family: "Roboto", system-ui; 
 }
@@ -2378,8 +2389,8 @@ body {
 }
 .nav__iconset__flex--icons {
   color: rgb(136, 136, 136);
-  width: 2rem;
-  height: 2rem;
+  width: 2.3rem;
+  height: 2.3rem;
   padding: 1rem;
   border-radius: 50%;
   transition: all 0.3s ease;
@@ -2410,13 +2421,13 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.project__status {
+.projects_status {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 3rem 0 0 0;
 }
-.project__status__cards {
+.projects_status__cards {
   align-items: center;
   display: flex;
   margin: 0 0 0 0;
@@ -2476,7 +2487,6 @@ body {
   justify-content: space-between;
 }
 .image_button_flex--plus {
-  margin-left: 0.5rem;
   width: 2.5rem;
   height: 2.5rem;
   fill: rgb(42, 219, 250);
@@ -2486,7 +2496,6 @@ body {
   cursor: pointer;
 }
 .image_button_flex--button {
-  font-size: 1rem;
   color: rgb(42, 219, 250);
   background-color: rgba(86, 217, 240, 0.212);
   font-family: "Roboto", system-ui;
@@ -2661,7 +2670,7 @@ body {
 .title__icon__flex1__title {
   font-size: 1.7rem;
   font-family: "Roboto", system-ui;
-  margin: 1.5rem 0 0 0;
+  margin: 2rem 0 0 0;
   font-style: normal;
 }
 .title__icon__flex1__star1 {
@@ -2745,7 +2754,7 @@ body {
 }
 .grid__container {
   display: grid;
-  grid-template-columns: 8% 54% 100%;
+  grid-template-columns: 8% 57% 35%;
   overflow: visible;
 }
 @media (min-width: 3em) and (max-width: 37.43em) {
@@ -2799,13 +2808,12 @@ body {
 .usercard__column {
   background-color: #ffffff;
   border-radius: 4.3rem;
-  width:70rem;
   height: 100vh;
   overflow: hidden;
-  margin-left: -1rem;
+  margin: 0 1rem 0 0rem;
 }
 .usercard__column__area {
-  margin: 3rem 4.3rem;
+  margin: 3.7rem 4.3rem;
 }
 @media (max-width: 599px) {
   .usercard__column {

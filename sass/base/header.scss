@@ -1,8 +1,8 @@
-.header {
-  margin: 2rem 3rem 2rem 2rem;
-  display: flex;
-  align-items: center;
+.nav {
+  @include flex-center;
   justify-content: space-between;
+  height: 3.6rem;
+  padding: 0 3.5rem;
   @media (min-width: 3em) and (max-width: 37.43em) {
     margin: 2rem 3rem 2rem 0rem;
   }
@@ -12,27 +12,27 @@
     }
   }
   @media (min-width: 320px) and (max-width: 600px) {
-    .header__search {
+    .nav__search {
       margin-top: 10rem;
     }
     .nav__searchbar {
       width: 30rem;
       margin-left: -15rem;
     }
-    .header__searchicon {
+    .nav__searchicon {
       top: 22%;
       left: -30%;
     }
   }
   @media (min-width: 320px) and (max-width: 400px) {
-    .header__search {
+    .nav__search {
       margin-top: 10rem;
     }
     .nav__searchbar {
       width: 20rem;
       margin-left: -15rem;
     }
-    .header__searchicon {
+    .nav__searchicon {
       top: 22%;
       left: -67%;
     }
@@ -146,7 +146,7 @@
       margin-top: 0.3rem;
     }
   }
-  &__loginarea {
+  &__login {
     @media (min-width: 34.6em) and (max-width: 37.43em) {
       margin: 0 15rem 0 0;
     }
@@ -200,7 +200,6 @@
       border-radius: 50%;
       margin: 0 0 0 1.5rem;
       transition: all 0.3s ease;
-
       &:hover {
         transform: scale(1.1);
         cursor: pointer;
@@ -276,7 +275,7 @@ body {
   }
 }
 @media (min-width: 320px) and (max-width: 600px) {
-  .header .nav__searchbar {
+  .nav .nav__searchbar {
     width: 50rem;
     margin-left: -10rem;
   }
@@ -285,7 +284,7 @@ body {
   }
 }
 @media (min-width: 320px) and (max-width: 400px) {
-  .header .nav__searchbar {
+  .nav .nav__searchbar {
     width: 40rem;
     margin-left: -15rem;
   }
