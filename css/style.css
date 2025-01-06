@@ -204,7 +204,13 @@ body {
     left: 3%;
   }
 }
-@media (min-width: 801px) and (max-width: 1200px) {
+@media (min-width: 801px) and (max-width: 900px) {
+  .nav .nav__searchicon {
+    top: 19%;
+    left: 2.5%;
+  }
+}
+@media (min-width: 901px) and (max-width: 1200px) {
   .nav .nav__searchicon {
     top: 19%;
     left: 2.5%;
@@ -273,7 +279,7 @@ body {
 }
 @media (min-width: 56.26em) and (max-width: 62.5em) {
   .nav__title {
-    margin: 0 0 0 6rem;
+    margin: 0 0 0 5rem;
   }
 }
 @media (min-width: 62.51em) and (max-width: 68.75em) {
@@ -639,7 +645,7 @@ body {
   .cards_flex--card7,
   .cards_flex--card8 {
     width: 24rem;
-    margin: 2rem -0.5rem -3rem 2.4rem;
+    margin: 2rem -0.5rem -3rem -2.4rem;
     gap: 0rem;
   }
 }
@@ -653,7 +659,7 @@ body {
   .cards_flex--card7,
   .cards_flex--card8 {
     width: 28rem;
-    margin: 2rem 0rem -3rem 3rem;
+    margin: 2rem -1rem -3rem 1.9rem;
     gap: 0rem;
     border-radius: 3.5rem;
   }
@@ -667,8 +673,8 @@ body {
   .cards_flex--card6,
   .cards_flex--card7,
   .cards_flex--card8 {
-    width: 26rem;
-    margin: 2rem -2rem -3rem 2.5rem;
+    width: 27rem;
+    margin: 2rem 1.5rem -3rem 1.5rem;
     gap: 0rem;
     border-radius: 3.5rem;
   }
@@ -748,7 +754,6 @@ body {
   visibility: hidden;
   transition: all 0 ease-in-out;
   margin: 0 0 0 1rem;
-  margin: 0 0 0 1rem;
   background-color: #eb9d4a;
   transform: translate(-50%, -50%);
 }
@@ -766,19 +771,19 @@ body {
   border-radius: 2rem;
   transform: translate(-50%, -50%);
 }
-@media (min-width: 3em) and (max-width: 37.43em) {
-  .card2::after {
-    margin: 0 0 0 4rem;
-  }
-}
 @media (min-width: 37.5em) and (max-width: 62.4em) {
   .card2::after {
-    margin: 0 0 0 5rem;
+    margin: 0 0 0 2.5rem;
   }
 }
 @media (min-width: 300px) and (max-width: 400px) {
+  .card2::before {
+    width: 85%;
+    margin: 0 0 0 1rem;
+  }
   .card2::after {
-    margin: 0 0 0 4.5rem;
+    width: 75%;
+    margin: 0 0 0 3rem;
   }
 }
 .card2__title {
@@ -1018,28 +1023,17 @@ body {
 }
 @media (min-width: 37.5em) and (max-width: 62.4em) {
   .card3::after {
-    margin: 0 0 0 5rem;
-  }
-}
-@media (min-width: 3em) and (max-width: 37.43em) {
-  .card3::after {
-    margin: 0 0 0 4rem;
-    height: 0.35rem;
-  }
-}
-@media (min-width: 3em) and (max-width: 37.43em) {
-  .card3::after {
-    margin: 0 0 0 3rem;
-  }
-}
-@media (min-width: 37.5em) and (max-width: 61.75em) {
-  .card3::after {
-    margin: 0 0 0 4rem;
+    margin: 0 0 0 2.5rem;
   }
 }
 @media (min-width: 300px) and (max-width: 400px) {
+  .card3::before {
+    width: 85%;
+    margin: 0 0 0 1rem;
+  }
   .card3::after {
-    margin: 0 0 0 4.5rem;
+    width: 75%;
+    margin: 0 0 0 3rem;
   }
 }
 .card3__title {
@@ -1279,28 +1273,17 @@ body {
 }
 @media (min-width: 37.5em) and (max-width: 62.4em) {
   .card4::after {
-    margin: 0 0 0 5rem;
-  }
-}
-@media (min-width: 3em) and (max-width: 37.43em) {
-  .card4::after {
-    margin: 0 0 0 4rem;
-    height: 0.35rem;
-  }
-}
-@media (min-width: 3em) and (max-width: 37.43em) {
-  .card4::after {
-    margin: 0 0 0 3rem;
-  }
-}
-@media (min-width: 37.5em) and (max-width: 61.75em) {
-  .card4::after {
-    margin: 0 0 0 4rem;
+    margin: 0 0 0 2.5rem;
   }
 }
 @media (min-width: 300px) and (max-width: 400px) {
+  .card4::before {
+    width: 85%;
+    margin: 0 0 0 1rem;
+  }
   .card4::after {
-    margin: 0 0 0 4.5rem;
+    width: 75%;
+    margin: 0 0 0 3rem;
   }
 }
 .card4__title {
@@ -1549,27 +1532,17 @@ body {
 }
 @media (min-width: 37.5em) and (max-width: 62.4em) {
   .card5::after {
-    margin: 0 0 0 5rem;
-  }
-}
-@media (min-width: 3em) and (max-width: 37.43em) {
-  .card5::after {
-    margin: 0 0 0 4rem;
-  }
-}
-@media (min-width: 3em) and (max-width: 37.43em) {
-  .card5::after {
-    margin: 0 0 0 3rem;
-  }
-}
-@media (min-width: 37.5em) and (max-width: 61.75em) {
-  .card5::after {
-    margin: 0 0 0 4rem;
+    margin: 0 0 0 2.5rem;
   }
 }
 @media (min-width: 300px) and (max-width: 400px) {
+  .card5::before {
+    width: 85%;
+    margin: 0 0 0 1rem;
+  }
   .card5::after {
-    margin: 0 0 0 4.5rem;
+    width: 75%;
+    margin: 0 0 0 3rem;
   }
 }
 .card5__title {
@@ -1886,27 +1859,17 @@ body {
 }
 @media (min-width: 37.5em) and (max-width: 62.4em) {
   .card::after {
-    margin: 0 0 0 5rem;
-  }
-}
-@media (min-width: 3em) and (max-width: 37.43em) {
-  .card::after {
-    margin: 0 0 0 4rem;
-  }
-}
-@media (min-width: 3em) and (max-width: 37.43em) {
-  .card::after {
-    margin: 0 0 0 3rem;
-  }
-}
-@media (min-width: 37.5em) and (max-width: 61.75em) {
-  .card::after {
-    margin: 0 0 0 4rem;
+    margin: 0 0 0 2.5rem;
   }
 }
 @media (min-width: 300px) and (max-width: 400px) {
+  .card::before {
+    width: 85%;
+    margin: 0 0 0 1rem;
+  }
   .card::after {
-    margin: 0 0 0 4.5rem;
+    width: 75%;
+    margin: 0 0 0 3rem;
   }
 }
 .card__title {
@@ -1964,7 +1927,7 @@ body {
     margin-right: -0.5rem;
   }
 }
-@media (min-width: 62.5em) and (max-width: 79.3em) {
+@media (min-width:  76.4em) and (max-width: 79.3em) {
   .card__divider {
     width: 150%;
     box-sizing: border-box;
@@ -2173,15 +2136,15 @@ body {
 }
 .client:hover {
   cursor: pointer;
-  transform: translateX(1rem) scale(1.01);
-  background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 1.5rem;
-  margin-left: 0.5rem;
+  background: white;
+  border-radius: 10px;
+  transform: translate(8px, 1px);
+  box-shadow: 2rem 3rem 8rem #0000002b;
+  border: none;
 }
 .client__flex {
   display: flex;
-}
+} 
 .client__img {
   width: 4.8rem;
   height: 4.8rem;
@@ -2566,8 +2529,8 @@ body {
 }
 @media (min-width: 12.5em) and (max-width: 79em) {
   .cards_flex {
-    gap: 3rem;
-    margin-left: 3rem;
+    gap: 10rem;
+    margin-left: 1.5rem;
   }
 }
 @media (min-width: 3em) and (max-width: 62.4em) {
@@ -2895,12 +2858,12 @@ body {
   margin: 0 1rem 0 0rem;
   overflow-x: hidden;
 }
-@media (min-width: 1150px) and (max-width: 1270px) {
+@media (min-width: 1000px) and (max-width: 1270px) {
   .nav__iconset {
     margin: 0 1rem 0 -0.5rem;
   }
 }
-@media (min-width: 799.01px) and (max-width: 998px) {
+@media (min-width: 799.01px) and (max-width: 999px) {
   .nav__iconset {
     margin: 0 1rem 0 -0.7rem;
   }
