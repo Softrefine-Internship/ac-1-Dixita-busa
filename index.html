@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test 4</title>
+    <title>Test</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,96 +20,95 @@
     
     <!--------------------- SECTION --------------------->
     <section class="section__container">
-      <main class="main__container">
-        <header class="nav">
-          <section class="nav__left">
-            
-            <ion-icon class="nav__icon" name="reorder-three-outline"></ion-icon>
-
-            <h1 class="nav__title">Portfolio</h1>
-            
-            <div class="nav__search">
-              <input class="nav__searchbar" type="search" placeholder="Search"/>
+      <header>
+        <div class="nav">
+          <div class="nav__left">     
+            <ion-icon id="icon" class="nav__left--icons" name="reorder-three-outline"></ion-icon>
+            <h1 class="nav__left--title">Portfolio</h1>           
+            <div class="nav__left--searchbar">
+              <input class="search" type="search" placeholder="Search"/>
               <span>
-                <ion-icon class="nav__searchicon" name="search-outline"></ion-icon>
+                <ion-icon class="searchicon" name="search-outline"></ion-icon>
               </span>  
             </div>
-          </section> 
+          </div> 
 
           <!--------------------- LOGIN --------------------->
-          <section>
-            <section class="nav__login">
-              <ion-icon class="nav__login--plus" name="add-outline"></ion-icon>
+          <div class="nav__right">
+            <ion-icon class="nav__right--plus" name="add-outline"></ion-icon>
 
-              <!--------------------- BELL --------------------->
-              <div class="nav__login__bell">
-                <ion-icon class="nav__login--bell" name="notifications-outline"></ion-icon>
-                <span>
-                  <div class="nav__login--circle"></div>
-                </span>
-              </div>
+            <!--------------------- BELL --------------------->
+            <div class="nav__right__bell">
+              <ion-icon class="nav__right--bell" name="notifications-outline"></ion-icon>
+              <span>
+                <div class="nav__right--circle"></div>
+              </span>
+            </div>
 
-              <!--------------------- line LINE --------------------->
-              <div class="nav__login__line"></div>
-              <img class="nav__login__image" src="img/c.jpg" alt="userimage"/>
-              <h1 class="nav__login__name">Hira R</h1>
-            </section>
-          </section>
-        </header>
-        <section class="grid__container">
-          <div class="nav__iconset">
-            <main class="phone__view_flex">
-              <section class="nav__iconset__flex">
-                <ion-icon id="homeboxIcon" class="nav__iconset__flex--icons" name="home-outline"></ion-icon>
-                <ion-icon class="nav__iconset__flex--icons" name="person-circle-outline"></ion-icon>
-                <ion-icon id="chatboxIcon" class="nav__iconset__flex--icons" name="chatbox-outline"></ion-icon>
-                <ion-icon class="nav__iconset__flex--icons" name="calendar-outline"></ion-icon>
-                <ion-icon class="nav__iconset__flex--icons" name="time-outline"></ion-icon>
-                <ion-icon class="nav__iconset__flex--icons" name="settings-outline"></ion-icon>
-              </section>
-            </main>
+            <!--------------------- LINE --------------------->
+            <div class="nav__right--line"></div>
+            <img class="nav__right--image" src="img/c.jpg" alt="userimage"/>
+            <h1 class="nav__right--name">Hira R</h1>
           </div>
+        </div>
+      </header>
+        
+      <!--------------------- MAIN CONTAINER --------------------->
+      <section class="main-container">
+        <div id="nav__icon" class="nav__icon">
+          <main class="phone__view_flex">
+            <section class="nav__iconset">
+              <ion-icon id="homeboxIcon" class="nav__iconset--icon" name="home-outline"></ion-icon>
+              <ion-icon class="nav__iconset--icon" name="person-circle-outline"></ion-icon>
+              <ion-icon id="chatboxIcon" class="nav__iconset--icon" name="chatbox-outline"></ion-icon>
+              <ion-icon class="nav__iconset--icon" name="calendar-outline"></ion-icon>
+              <ion-icon class="nav__iconset--icon" name="time-outline"></ion-icon>
+              <ion-icon class="nav__iconset--icon" name="settings-outline"></ion-icon>
+            </section>
+          </main>
+        </div>
 
-          <div id="userCardColumn" class="usercard__column">
-            <section class="scroller">
+        <!--------------------- CONTENT --------------------->
+          <div id="content" class="content">
+            <div class="projects">
               <section class="usercard__column__area">
-                <main class="title">
-                  <h1 class="title__name">Projects</h1>
-                  <h1 class="title__date">July,  2020</h1>
+                <main class="projects__heading">
+                  <h1 class="projects__heading--h2">Projects</h1>
+                  <h1 class="projects__heading--date">July,  2020</h1>
                 </main>
-                <div class="projects_status">
-                  <section class="projects_status__cards">
-                    <div class="projects_status_info">
-                      <h1 class="projects_status_info__numbers">45</h1>
+                <div class="projects__status">
+                  <div class="projects__status__cards">
+                    <div class="projects__status_info">
+                      <h1 class="projects__status_info--number">45</h1>
                       <div class="project_info_flex">
-                        <h1 class="projects_status_info__des space">In Progress</h1>
-                        <ion-icon class="projects_status_info__bullet bottom" name="radio-button-off-outline"></ion-icon>
+                        <h1 class="projects__status_info--detail">In Progress</h1>
+                        <ion-icon class="projects__status_info--bullet" name="radio-button-off-outline"></ion-icon>
                       </div>
                     </div>
                     <div>
-                      <h1 class="projects_status_info__numbers">12</h1>
+                      <h1 class="projects__status_info--number">12</h1>
                       <div class="project_info_flex">
-                        <h1 class="projects_status_info__des space"> In Progress </h1>
-                        <ion-icon class="projects_status_info__bullet bottom" name="radio-button-off-outline"></ion-icon>
+                        <h1 class="projects__status_info--detail"> In Progress </h1>
+                        <ion-icon class="projects__status_info--bullet" name="radio-button-off-outline"></ion-icon>
                       </div>
                     </div>
                     <div>
-                      <h1 class="projects_status_info__numbers">10</h1>
+                      <h1 class="projects__status_info--number">10</h1>
                       <div class="project_info_flex">
-                        <h1 class="projects_status_info__des space"> Upcoming </h1>
-                        <ion-icon class="projects_status_info__bullet bottom" name="radio-button-off-outline"></ion-icon>
+                        <h1 class="projects__status_info--detail"> Upcoming </h1>
+                        <ion-icon class="projects__status_info--bullet" name="radio-button-off-outline"></ion-icon>
                       </div>
                     </div>
                     <div>
-                      <h1 class="projects_status_info__numbers">67</h1>
+                      <h1 class="projects__status_info--number">67</h1>
                       <div class="project_info_flex">
-                        <h1 class="projects_status_info__des space"> Total Project </h1>
+                        <h1 class="projects__status_info--detail"> Total Project </h1>
                       </div>
                     </div>
-                  </section>
-                  <div class="icon_profile_flex">
-                    <ion-icon class="icon_profile_flex--icon--lines" name="reorder-three-outline"></ion-icon>
-                    <ion-icon class="icon_profile_flex--icon" name="grid-outline"></ion-icon>
+                  </div>
+                  <div class="projects__status_header">
+                    <ion-icon class="projects__status_header--icons--lines" name="reorder-three-outline"></ion-icon>
+                    <ion-icon class="projects__status_header--icon" name="grid-outline"></ion-icon>
                   </div>
                 </div>
               </section>
@@ -122,30 +121,27 @@
                     <!--------------------- CARD 1 --------------------->
                     <article class="card">
                       <main class="card__info">
-                        <div class="card__info--date">July 2, 2020</div>
-                        <section class="dots">
-                          <div class="dot"></div>
-                          <div class="dot"></div>
-                        </section>
+                        <div class="card__date">July 2, 2020</div>
+                        <div class="card__info--dots">
+                          <div class="card__info--dot"></div>
+                          <div class="card__info--dot"></div>
+                        </div>
                       </main>
                       <h1 class="card__title">Web Designing</h1>
-                      <h1 class="card__name">Prototyping</h1>
-                      <h1 class="card__subname">Progress</h1>
+                      <h1 class="card__title--name">Prototyping</h1>
+                      <h1 class="card__progress--subname">Progress</h1>
                       <main class="card__progress">
-                        <div
-                          class="card__progress--progress"
-                          style="width: 90%"
-                        ></div>
+                        <div  class="card__progress--progress" style="width: 90%"></div>
                       </main>
-                      <h1 class="card__percentage">90%</h1>
+                      <h1 class="card__progress--percentage">90%</h1>
                       <div class="card__divider"></div>
-                      <section class="image_button_flex">
-                        <div class="image_button_flex--image">
-                          <img class="image_button_flex--image--size" src="img/c2.jpg" alt="user"/>
-                          <img class="image_button_flex--image--size" src="img/c6.jpg" alt="user"/>
-                          <ion-icon class="image_button_flex--plus" name="add-circle"></ion-icon>
+                      <section class="card__footer">
+                        <div class="card__footer--image">
+                          <img class="card__footer--image--size" src="img/c2.jpg" alt="user"/>
+                          <img class="card__footer--image--size" src="img/c6.jpg" alt="user"/>
+                          <ion-icon class="card__footer--plus" name="add-circle"></ion-icon>
                         </div>
-                        <button class="image_button_flex--button">2 Days Left</button>
+                        <button class="card__footer--button">2 Days Left</button>
                       </section>
                     </article>
                   </div>
@@ -154,30 +150,30 @@
                   <div class="cards_flex--card2">
                     <article class="card2">
                       <main class="card2__info">
-                        <div class="card2__info--date">July 5, 2020</div>
-                        <section class="dots">
-                          <div class="dot"></div>
-                          <div class="dot"></div>
-                        </section>
+                        <div class="card2__date">July 5, 2020</div>
+                        <div class="card__info--dots">
+                          <div class="card__info--dot"></div>
+                          <div class="card__info--dot"></div>
+                        </div>
                       </main>
                       <h1 class="card2__title">Mobile App</h1>
-                      <h1 class="card2__name">Shopping</h1>
-                      <h1 class="card2__subname">Progress</h1>
+                      <h1 class="card2__title--name">Shopping</h1>
+                      <h1 class="card2__progress--subname">Progress</h1>
                       <main class="card2__progress">
                         <div
                           class="card2__progress--progress"
                           style="width: 30%"
                         ></div>
                       </main>
-                      <h1 class="card2__percentage">30%</h1>
+                      <h1 class="card2__progress--percentage">30%</h1>
                       <div class="card2__divider"></div>
-                      <section class="image_button_flex2">
-                        <div class="image_button_flex2--image2">
-                          <img class="image_button_flex2--image2--size" src="img/c3.jpg" alt="user"/>
-                          <img class="image_button_flex2--image2--size" src="img/c4.jpg" alt="user"/>
-                          <ion-icon class="image_button_flex2--plus2" name="add-circle"></ion-icon>
+                      <section class="card__footer2">
+                        <div class="card__footer2--image2">
+                          <img class="card__footer2--image2--size" src="img/c3.jpg" alt="user"/>
+                          <img class="card__footer2--image2--size" src="img/c4.jpg" alt="user"/>
+                          <ion-icon class="card__footer2--plus2" name="add-circle"></ion-icon>
                         </div>
-                        <button class="image_button_flex2--button2">3 week Left</button>
+                        <button class="card__footer2--button2">3 week Left</button>
                       </section>
                     </article>
                   </div>
@@ -188,30 +184,30 @@
                   <div class="cards_flex--card3">
                     <article class="card3">
                       <main class="card3__info">
-                        <div class="card3__info--date">July 15, 2020</div>
-                        <section class="dots">
-                          <div class="dot"></div>
-                          <div class="dot"></div>
-                        </section>
+                        <div class="card3__date">July 15, 2020</div>
+                        <div class="card__info--dots">
+                          <div class="card__info--dot"></div>
+                          <div class="card__info--dot"></div>
+                        </div>
                       </main>
                       <h1 class="card3__title">Dashboard</h1>
-                      <h1 class="card3__name">Medical</h1>
-                      <h1 class="card3__subname">Progress</h1>
+                      <h1 class="card3__title--name">Medical</h1>
+                      <h1 class="card3__progress--subname">Progress</h1>
                       <main class="card3__progress">
                         <div
                           class="card3__progress--progress"
                           style="width: 50%"
                         ></div>
                       </main>
-                      <h1 class="card3__percentage">50%</h1>
+                      <h1 class="card3__progress--percentage">50%</h1>
                       <div class="card3__divider"></div>
-                      <section class="image_button_flex3">
-                        <div class="image_button_flex3--image3">
-                          <img class="image_button_flex3--image3--size" src="img/c5.jpg" alt="user"/>
-                          <img class="image_button_flex3--image3--size" src="img/c7.jpg" alt="user"/>
-                          <ion-icon class="image_button_flex3--plus3" name="add-circle"></ion-icon>
+                      <section class="card__footer3">
+                        <div class="card__footer3--image3">
+                          <img class="card__footer3--image3--size" src="img/c5.jpg" alt="user"/>
+                          <img class="card__footer3--image3--size" src="img/c7.jpg" alt="user"/>
+                          <ion-icon class="card__footer3--plus3" name="add-circle"></ion-icon>
                         </div>
-                        <button class="image_button_flex3--button3">2 week Left</button>
+                        <button class="card__footer3--button3">2 week Left</button>
                       </section>
                     </article>
                   </div>
@@ -220,30 +216,30 @@
                   <div class="cards_flex--card4">
                     <article class="card4">
                       <main class="card4__info">
-                        <div class="card4__info--date">July 10, 2020</div>
-                        <section class="dots">
-                          <div class="dot"></div>
-                          <div class="dot"></div>
-                        </section>
+                        <div class="card4__date">July 10, 2020</div>
+                        <div class="card__info--dots">
+                          <div class="card__info--dot"></div>
+                          <div class="card__info--dot"></div>
+                        </div>
                       </main>
                       <h1 class="card4__title">Web Designing</h1>
-                      <h1 class="card4__name">Wireframing</h1>
-                      <h1 class="card4__subname">Progress</h1>
+                      <h1 class="card4__title--name">Wireframing</h1>
+                      <h1 class="card4__progress--subname">Progress</h1>
                       <main class="card4__progress">
                         <div
                           class="card4__progress--progress"
                           style="width: 20%"
                         ></div>
                       </main>
-                      <h1 class="card4__percentage">20%</h1>
+                      <h1 class="card4__progress--percentage">20%</h1>
                       <div class="card4__divider"></div>
-                      <section class="image_button_flex4">
-                        <div class="image_button_flex4--image4">
-                          <img class="image_button_flex4--image4--size" src="img/c1.jpg" alt="user"/>
-                          <img class="image_button_flex4--image4--size" src="img/c8.jpg" alt="user"/>
-                          <ion-icon class="image_button_flex4--plus4" name="add-circle"></ion-icon>
+                      <section class="card__footer4">
+                        <div class="card__footer4--image4">
+                          <img class="card__footer4--image4--size" src="img/c1.jpg" alt="user"/>
+                          <img class="card__footer4--image4--size" src="img/c8.jpg" alt="user"/>
+                          <ion-icon class="card__footer4--plus4" name="add-circle"></ion-icon>
                         </div>
-                        <button class="image_button_flex4--button4">3 week Left</button>
+                        <button class="card__footer4--button4">3 week Left</button>
                       </section>
                     </article>
                   </div>
@@ -254,30 +250,30 @@
                   <div class="cards_flex--card5">
                     <article class="card5">
                       <main class="card5__info">
-                        <div class="card5__info--date">June 2, 2020</div>
-                        <section class="dots">
-                          <div class="dot"></div>
-                          <div class="dot"></div>
-                        </section>
+                        <div class="card5__date">June 2, 2020</div>
+                        <div class="card__info--dots">
+                          <div class="card__info--dot"></div>
+                          <div class="card__info--dot"></div>
+                        </div>
                       </main>
                       <h1 class="card5__title">Web App</h1>
-                      <h1 class="card5__name">Medical</h1>
-                      <h1 class="card5__subname">Progress</h1>
+                      <h1 class="card5__title--name">Medical</h1>
+                      <h1 class="card5__progress--subname">Progress</h1>
                       <main class="card5__progress">
                         <div
                           class="card5__progress--progress"
                           style="width: 80%"
                         ></div>
                       </main>
-                      <h1 class="card5__percentage">80%</h1>
+                      <h1 class="card5__progress--percentage">80%</h1>
                       <div class="card5__divider"></div>
-                      <section class="image_button_flex5">
-                        <div class="image_button_flex5--image5">
-                          <img class="image_button_flex5--image5--size" src="img/c2.jpg" alt="user"/>
-                          <img class="image_button_flex5--image5--size" src="img/c6.jpg" alt="user"/>
-                          <ion-icon class="image_button_flex5--plus5" name="add-circle"></ion-icon>
+                      <section class="card__footer5">
+                        <div class="card__footer5--image5">
+                          <img class="card__footer5--image5--size" src="img/c2.jpg" alt="user"/>
+                          <img class="card__footer5--image5--size" src="img/c6.jpg" alt="user"/>
+                          <ion-icon class="card__footer5--plus5" name="add-circle"></ion-icon>
                         </div>
-                        <button class="image_button_flex5--button5">
+                        <button class="card__footer5--button5">
                           5 week Left
                         </button>
                       </section>
@@ -288,30 +284,30 @@
                   <div class="cards_flex--card6">
                     <article class="card2">
                       <main class="card2__info">
-                        <div class="card2__info--date">May 10, 2020</div>
-                        <section class="dots">
-                          <div class="dot"></div>
-                          <div class="dot"></div>
-                        </section>
+                        <div class="card2__date">May 10, 2020</div>
+                        <div class="card__info--dots">
+                          <div class="card__info--dot"></div>
+                          <div class="card__info--dot"></div>
+                        </div>
                       </main>
                       <h1 class="card2__title">Desktop App</h1>
-                      <h1 class="card2__name">Shopping</h1>
-                      <h1 class="card2__subname">Progress</h1>
+                      <h1 class="card2__title--name">Shopping</h1>
+                      <h1 class="card2__progress--subname">Progress</h1>
                       <main class="card2__progress">
                         <div
                           class="card2__progress--progress"
                           style="width: 60%"
                         ></div>
                       </main>
-                      <h1 class="card2__percentage">60%</h1>
+                      <h1 class="card2__progress--percentage">60%</h1>
                       <div class="card2__divider"></div>
-                      <section class="image_button_flex2">
-                        <div class="image_button_flex2--image2">
-                          <img class="image_button_flex2--image2--size" src="img/c3.jpg" alt="user"/>
-                          <img class="image_button_flex2--image2--size" src="img/c4.jpg" alt="user"/>
-                          <ion-icon class="image_button_flex2--plus2" name="add-circle"></ion-icon>
+                      <section class="card__footer2">
+                        <div class="card__footer2--image2">
+                          <img class="card__footer2--image2--size" src="img/c3.jpg" alt="user"/>
+                          <img class="card__footer2--image2--size" src="img/c4.jpg" alt="user"/>
+                          <ion-icon class="card__footer2--plus2" name="add-circle"></ion-icon>
                         </div>
-                        <button class="image_button_flex2--button2">4 week Left</button>
+                        <button class="card__footer2--button2">4 week Left</button>
                       </section>
                     </article>
                   </div>
@@ -322,30 +318,30 @@
                   <div class="cards_flex--card3">
                     <article class="card3">
                       <main class="card3__info">
-                        <div class="card3__info--date">July 15, 2020</div>
-                        <section class="dots">
-                          <div class="dot"></div>
-                          <div class="dot"></div>
-                        </section>
+                        <div class="card3__date">July 15, 2020</div>
+                        <div class="card__info--dots">
+                          <div class="card__info--dot"></div>
+                          <div class="card__info--dot"></div>
+                        </div>
                       </main>
                       <h1 class="card3__title">Dashboard</h1>
-                      <h1 class="card3__name">Medical</h1>
-                      <h1 class="card3__subname">Progress</h1>
+                      <h1 class="card3__title--name">Medical</h1>
+                      <h1 class="card3__progress--subname">Progress</h1>
                       <main class="card3__progress">
                         <div
                           class="card3__progress--progress"
                           style="width: 50%"
                         ></div>
                       </main>
-                      <h1 class="card3__percentage">50%</h1>
+                      <h1 class="card3__progress--percentage">50%</h1>
                       <div class="card3__divider"></div>
-                      <section class="image_button_flex3">
-                        <div class="image_button_flex3--image3">
-                          <img class="image_button_flex3--image3--size" src="img/c5.jpg" alt="user"/>
-                          <img class="image_button_flex3--image3--size" src="img/c7.jpg" alt="user"/>
-                          <ion-icon class="image_button_flex3--plus3" name="add-circle"></ion-icon>
+                      <section class="card__footer3">
+                        <div class="card__footer3--image3">
+                          <img class="card__footer3--image3--size" src="img/c5.jpg" alt="user"/>
+                          <img class="card__footer3--image3--size" src="img/c7.jpg" alt="user"/>
+                          <ion-icon class="card__footer3--plus3" name="add-circle"></ion-icon>
                         </div>
-                        <button class="image_button_flex3--button3">2 week Left</button>
+                        <button class="card__footer3--button3">2 week Left</button>
                       </section>
                     </article>
                   </div>
@@ -354,36 +350,36 @@
                   <div class="cards_flex--card4">
                     <article class="card4">
                       <main class="card4__info">
-                        <div class="card4__info--date">July 10, 2020</div>
-                        <section class="dots">
-                          <div class="dot"></div>
-                          <div class="dot"></div>
-                        </section>
+                        <div class="card4__date">July 10, 2020</div>
+                        <div class="card__info--dots">
+                          <div class="card__info--dot"></div>
+                          <div class="card__info--dot"></div>
+                        </div>
                       </main>
                       <h1 class="card4__title">Web Designing</h1>
-                      <h1 class="card4__name">Wireframing</h1>
-                      <h1 class="card4__subname">Progress</h1>
+                      <h1 class="card4__title--name">Wireframing</h1>
+                      <h1 class="card4__progress--subname">Progress</h1>
                       <main class="card4__progress">
                         <div
                           class="card4__progress--progress"
                           style="width: 20%"
                         ></div>
                       </main>
-                      <h1 class="card4__percentage">20%</h1>
+                      <h1 class="card4__progress--percentage">20%</h1>
                       <div class="card4__divider"></div>
-                      <section class="image_button_flex4">
-                        <div class="image_button_flex4--image4">
-                          <img class="image_button_flex4--image4--size" src="img/c1.jpg" alt="user"/>
-                          <img class="image_button_flex4--image4--size" src="img/c8.jpg" alt="user"/>
-                          <ion-icon class="image_button_flex4--plus4" name="add-circle"></ion-icon>
+                      <section class="card__footer4">
+                        <div class="card__footer4--image4">
+                          <img class="card__footer4--image4--size" src="img/c1.jpg" alt="user"/>
+                          <img class="card__footer4--image4--size" src="img/c8.jpg" alt="user"/>
+                          <ion-icon class="card__footer4--plus4" name="add-circle"></ion-icon>
                         </div>
-                        <button class="image_button_flex4--button4">3 week Left</button>
+                        <button class="card__footer4--button4">3 week Left</button>
                       </section>
                     </article>
                   </div>
                 </article>
               </section>
-            </section>
+            </div>
           </div>
           
           <!--------------------- CLIENT MESSAGES --------------------->
@@ -393,15 +389,15 @@
                 <div>
                   <h1 class="msgflex__txt">Client Messages</h1>
                 </div>
-                <div class="msg_icon_flex">
+                <div class="msgflex__txt--icon">
                   <ion-icon class="msgflex__searchicon" name="search-outline"></ion-icon>
-                  <div class="dotfooter">
-                    <div class="dotfooter__one"></div>
-                    <div class="dotfooter__two"></div>
+                  <div class="dotfooter__txt--opt">
+                    <div class="dotfooter__txt--opt-dot"></div>
+                    <div class="dotfooter__txt--opt-dot"></div>
                   </div>
                 </div>
               </div>
-              <article class="row2">
+              <div class="row2">
                 <section class="client">
                   <div class="client__flex">
                     <div>
@@ -515,24 +511,24 @@
                     </div>
                   </div>
                 </section>
-              </article>
+              </div>
             </main>
           </div>
-        </section>
-      </main>
+      </section>
     </section>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const chatboxIcon = document.getElementById("chatboxIcon");
-        const userCardColumn = document.getElementById("userCardColumn");
+        const content = document.getElementById("content");
         const homeboxIcon = document.getElementById("homeboxIcon");
-        const iconColumnFlex = document.querySelector(".nav__iconset__flex");
+        const iconColumnFlex = document.querySelector(".nav__iconset");
 
-        if (chatboxIcon && userCardColumn && homeboxIcon && iconColumnFlex) {
+        if (chatboxIcon && content && homeboxIcon && iconColumnFlex) {
           chatboxIcon.addEventListener("click", function handleChatboxClick() {
             if (window.innerWidth < 768) {
               console.log("Chatbox clicked");
-              userCardColumn.classList.add("hidden");
+              content.classList.add("hidden");
               chatboxIcon.classList.add("");
               iconColumnFlex.classList.add("hide-bg");
             }
@@ -541,7 +537,7 @@
           homeboxIcon.addEventListener("click", function handleHomeboxClick() {
             if (window.innerWidth < 768) {
               console.log("Homebox clicked");
-              userCardColumn.classList.remove("hidden");
+              content.classList.remove("hidden");
               chatboxIcon.classList.remove("");
               iconColumnFlex.classList.toggle("hide-bg");
             }
