@@ -1,30 +1,21 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 8% 57% 35%;
-  overflow: visible;
-  @media (min-width: 3em) and (max-width: 37.43em) {
-    grid-template-rows: 8% auto auto;
-    grid-template-columns: 1fr;
-    overflow: hidden;
-    height: 100vh;
-    overflow-x: hidden;
-    &::-webkit-scrollbar {
-      display: none;
-    }
+.main-container {
+  display: flex;
+  width: 100%;
+  height: 110%;
+  position: relative;
+}
+.messages {
+  height: 100%;
+  width: 35%;
+}
+@media (max-width: 1000px) {
+  .messages {
+    width: 45%;
   }
 }
-.col_3 {
-  height: auto;
-  color: white;
-  overflow: hidden;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin-left: -0.9rem;
-}
-@media (max-width: 600px) {
-  .col_3 {
-    width: 92vw;
-    font-size: 100%;
-    margin-left: 2rem;
+@media (max-width: 800px) {
+  .messages {
+    display: none;
   }
 }
 .icon__column {
@@ -43,122 +34,134 @@
     margin: 0 1rem 0 0.5rem;
   }
 }
-.usercard__column {
-  background-color: $color-white;
-  border-radius: 4.3rem;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0 1rem 0 0rem;
-  width: 65%;
-  height: 85%;
-  background: darken($color3, 1%);
-  border-radius: 3rem 3rem 0 0 ;
-  padding-inline: 5rem;
-
-  &__area {
-    margin: 3.7rem 4.3rem;
+.content {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+}
+@media (max-width: 800px) {
+  .content.chat-open .projects {
+    display: none;
   }
-  @media (max-width: 1000px){
-    width: 55%;
-    height: 105%;
-  }
-  @media (max-width: 800px){
+}
+@media (max-width: 800px) {
+  .content.chat-open .messages {
+    display: block;
     width: 100%;
-    padding-inline: 3rem;
-  }
-  @media (max-width: 599px) {
-    height: 100vh;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  @media (min-width: 18.7em) and (max-width: 37.43em) {
-    margin-top: 2rem;
-  }
-  &::-webkit-scrollbar {
-    display: none;
   }
 }
-.messages__column {
-  background-color: $color-main-bg;
-  overflow: visible;
-  height: 100vh;
-  margin-left: -1rem;
-  @media (max-width: 599px) {
-    height: 100vh;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  &::-webkit-scrollbar {
-    display: none;
-  }
+.card__progress--level {
+  margin-top: 10px;
+  width: 100%;
+  height: 0.6rem;
+  background-color: rgb(224, 220, 220);
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
-.scroller {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  height: 100vh;
-  padding: 0 0 8rem 0;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+.card__progress--progress {
+  height: 100%;
+  background-color: #00bbe5;
+  border-radius: 0.5rem;
 }
-.progress {
-  overflow-y: auto;
-  margin-top: -2rem;
-  @include responsive(phone) {
-    margin-right: 4rem;
-    margin-left: -4rem;
-  }
-  @include responsive(tab-small) {
-    margin-right: 4rem;
-    margin-left: -4rem;
-  }
-  @include responsive(tab-large) {
-    margin-right: 4rem;
-    margin-left: -4rem;
-  }
-  @include responsive(big-screens) {
-    margin-right: 6rem;
-    margin-left: -4rem;
-  }
-  @media (min-width: 62.5em) and (max-width: 79em) {
-    margin-right: 2rem;
-    margin-left: -1rem;
-  }
-  @media (min-width: 50em) and (max-width: 62.4em) {
-    margin-right: 2rem;
-    margin-left: -1rem;
-    padding-bottom: 2rem;
-  }
-  @media (min-width: 37.5em) and (max-width: 49.93em) {
-    margin-right: 2rem;
-    margin-left: -1rem;
-    padding-bottom: 2rem;
-  }
-  @media (min-width: 3em) and (max-width: 37.43em) {
-    padding-bottom: 13rem;
-  }
-  @media (max-width: 599px) {
-    height: 100vh;
-    padding-bottom: 28rem;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  @media (min-width: 300px) and (max-width: 600px) {
-    padding-bottom: 15rem;
-  }
-  &::-webkit-scrollbar {
-    display: none;
-  }
+.card__progress--percentage {
+  font-size: 1.3rem;
+  color: black;
+  text-align: right;
+  margin: 0.5rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 520;
+  font-style: normal;
 }
-.messages {
-  overflow-y: auto;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+.card2__progress--level {
+  margin-top: 10px;
+  width: 100%;
+  height: 0.6rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
-.hidden {
-  display: none;
+.card2__progress--progress {
+  height: 100%;
+  background-color: #ed970d;
+  border-radius: 0.5rem;
+}
+.card2__progress--percentage {
+  font-size: 1.3rem;
+  color: black;
+  text-align: right;
+  margin: 0.5rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 520;
+  font-style: normal;
+}
+.card3__progress--level {
+  margin-top: 10px;
+  width: 100%;
+  height: 0.6rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card3__progress--progress {
+  height: 100%;
+  background-color: #0ded3e;
+  border-radius: 0.5rem;
+}
+.card3__progress--percentage {
+  font-size: 1.3rem;
+  color: black;
+  text-align: right;
+  margin: 0.5rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 520;
+  font-style: normal;
+}
+.card4__progress--level {
+  margin-top: 10px;
+  width: 100%;
+  height: 0.6rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card4__progress--progress {
+  height: 100%;
+  background-color: #e51e92;
+  border-radius: 0.5rem;
+}
+.card4__progress--percentage {
+  font-size: 1.3rem;
+  color: black;
+  text-align: right;
+  margin: 0.5rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 520;
+  font-style: normal;
+}
+.card5__progress--level {
+  margin-top: 10px;
+  width: 100%;
+  height: 0.6rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card5__progress--progress {
+  height: 100%;
+  background-color: #b31ee5;
+  border-radius: 0.5rem;
+}
+.card5__progress--percentage {
+  font-size: 1.3rem;
+  color: black;
+  text-align: right;
+  margin: 0.5rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 520;
+  font-style: normal;
+}
+.card__progress--label {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }

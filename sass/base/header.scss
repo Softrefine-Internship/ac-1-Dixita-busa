@@ -1,301 +1,227 @@
 .nav {
-  @include flex-center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
   justify-content: space-between;
   height: 3.6rem;
   padding: 0 3.5rem;
-  @media (min-width: 3em) and (max-width: 37.43em) {
-    margin: 2rem 3rem 2rem 0rem;
-  }
-  @media (min-width: 500px) and (max-width: 552px) {
-    .nav__login {
-      margin-right: 20rem;
-    }
-  }
-  @media (min-width: 320px) and (max-width: 600px) {
-    .nav__search {
-      margin-top: 10rem;
-    }
-    .nav__searchbar {
-      width: 30rem;
-      margin-left: -15rem;
-    }
-    .nav__searchicon {
-      top: 22%;
-      left: -30%;
-    }
-  }
-  @media (min-width: 320px) and (max-width: 400px) {
-    .nav__search {
-      margin-top: 10rem;
-    }
-    .nav__searchbar {
-      width: 20rem;
-      margin-left: -15rem;
-    }
-    .nav__searchicon {
-      top: 22%;
-      left: -67%;
-    }
-  }
-  &__icon {
-    width: 4rem;
-    height: 4rem;
-    color: rgb(0, 0, 0);
-    margin: 0 0 0 0.7rem;
-    transition: all 0.3s ease;
-    &:hover {
-      cursor: pointer;
-    }
-    @media (min-width: 3em) and (max-width: 37.43em) {
-      display: none;
-    }
-    @media (min-width: 1150px) and (max-width: 1270px) {
-      margin: 0 0 0 1rem;
-    }
-    @media (min-width: 842px) and (max-width: 998px) {
-      margin: 0 0 0 1rem;
-    }
-    @media (min-width: 656px) and (max-width: 799px) {
-      margin: 0 0 0 1rem;
-    }
-  }
-  &__title {
-    font-size: 3rem;
-    margin: 0 0 0 5.5rem;
-    font-weight: 700;
-    position: sticky;
-    @include responsive(phone) {
-    }
-    @include responsive(tab-small) {
-    }
-    @include responsive(tab-large) {
-    }
-    @include responsive(big-screens) {
-      margin: 0 0 0 6.5rem;
-    }
-    @media (min-width: 3em) and (max-width: 37.43em) {
-      margin: 0 0 0 6.5rem;
-    }
-    @media (min-width: 62.5em) and (max-width: 75em) {
-      margin: 0 0 0 3rem;
-    }
-    @media (min-width: 37.5em) and (max-width: 43.75em) {
-      margin: 0 0 0 4.5rem;
-    }
-    @media (min-width: 43.76em) and (max-width: 50em) {
-      margin: 0 0 0 6rem;
-    }
-    @media (min-width: 50.01em) and (max-width: 56.25em) {
-      margin: 0 0 0 4.7rem;
-    }
-    @media (min-width: 56.26em) and (max-width: 62.5em) {
-      margin: 0 0 0 6rem;
-    }
-    @media (min-width: 62.51em) and (max-width: 68.75em) {
-      margin: 0 0 0 4.5rem;
-    }
-    @media (min-width: 68.76em) and (max-width: 75em) {
-      margin: 0 0 0 4.5rem;
-    }
-    @media (min-width: 75.01em) and (max-width: 81.25em) {
-      margin: 0 0 0 5.5rem;
-    }
-    @media (min-width: 81.26em) and (max-width: 84.38em) {
-      margin: 0 0 0 4rem;
-    }
-  }
-  &__search {
-    position: relative;
-  }
-  &__searchbar {
-    outline: none;
-    height: 2rem;
-    border: none;
-    border-radius: 3rem;
-    padding: 2rem 3.5rem;
-    width: 30rem;
-    appearance: auto;
-    margin: 0 0 0 7rem;
-    font-size: 2rem;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    @media (min-width: 3em) and (max-width: 37.43em) {
-      margin: 0 0 0 3rem;
-    }
-    @media (min-width: 3em) and (max-width: 34.6em) {
-      width: 20rem;
-    }
-    &:focus {
-      outline: 0.5px solid black;
-    }
-  }
-  &__searchicon {
-    position: absolute;
-    top: 22%;
-    left: 3%;
-    margin: 0 0 0 7rem;
-    width: 2rem;
-    height: 2rem;
-    color: rgb(0, 0, 0);
-    @media (min-width: 3em) and (max-width: 37.43em) {
-      margin: 0 0 0 3rem;
-    }
-    @media (min-width: 3em) and (max-width: 62.5em) {
-      margin-top: 0.3rem;
-    }
-    @media (min-width: 63em) and (max-width: 84.5em) {
-      margin-top: 0.3rem;
-    }
-  }
-  &__login {
-    @media (min-width: 34.6em) and (max-width: 37.43em) {
-      margin: 0 15rem 0 0;
-    }
-    @media (min-width: 3em) and (max-width: 34.6em) {
-      margin: 0 15rem 0 0;
-    }
-    &--plus {
-      width: 1.8rem;
-      stroke: white;
-      height: 1.8rem;
-      color: white;
-      background-color: rgb(0, 0, 0);
-      border-radius: 50%;
-      padding: 0.7rem;
-      transition: all 0.3s ease;
-      &:hover {
-        transform: scale(1.1);
-        cursor: pointer;
-      }
-    }
-    &--bell {
-      width: 3rem;
-      height: 3rem;
-      padding: 0.7rem;
-      transition: all 0.3s ease;
-      &:hover {
-        transform: rotate(-15deg);
-        cursor: pointer;
-      }
-    }
-    &__bell {
-      position: relative;
-    }
-    &--circle {
-      width: 0.8rem;
-      height: 0.8rem;
-      background-color: $color-red;
-      position: absolute;
-      top: 22%;
-      left: 52%;
-      border-radius: 50%;
-    }
-    &__line {
-      width: 0.1rem;
-      height: 3rem;
-      background-color: $color-grey;
-    }
-    &__image {
-      width: 4rem;
-      height: 4rem;
-      border-radius: 50%;
-      margin: 0 0 0 1.5rem;
-      transition: all 0.3s ease;
-      &:hover {
-        transform: scale(1.1);
-        cursor: pointer;
-      }
-    }
-    &__name {
-      font-size: 2rem;
-      margin: 0 0 0 0.5rem;
-    }
+}
+.nav__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  height: 100%;
+}
+@media (max-width: 800px) {
+  .nav__left {
+    gap: 6rem;
   }
 }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+.nav__left--hamburger {
+  width: 4rem;
+  height: 4rem;
+  color: rgb(0, 0, 0);
+  margin: 0 -1rem 0 0.3rem;
+  transition: all 0.3s ease;
 }
-.black-background {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  width: 2.3rem;
-  height: 2.3rem;
-  padding: 1rem;
-  border-radius: 50%;
+.nav__left--hamburger:hover {
+  cursor: pointer;
 }
-.black-background {
-  color: white;
+.nav__left--title {
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
 }
-#chatboxIcon.black-background {
-  color: white;
+.nav__left--searchbar {
+  height: 100%;
+  position: relative;
+  margin-left: -35px;
 }
-.hide-bg #homeboxIcon {
-  background-color: #ffffff00;
-  color: black;
-}
-@media (min-width: 300px) and (max-width: 600px) {
-  .nav__iconset {
-    width: 100%;
-  }
-  .phone__view_flex {
-    width: 80%;
-    margin-inline: auto;
-  }
-}
-@media (min-width: 300px) and (max-width: 368px) {
-  .bottom {
+@media (max-width: 600px) {
+  .nav__left--searchbar {
     display: none;
   }
-  .space {
-    margin-right: 2.5rem;
+}
+@media (max-width: 420px) {
+  .nav__left--searchbar {
+    margin-left: 0;
   }
 }
-@media (min-width: 3em) and (max-width: 37.43em) {
-  .nav__iconset__flex {
-    flex-direction: row;
-    margin: 1.8rem 0 1rem 0;
+@media (max-width: 370px) {
+  .nav__left--searchbar {
+    margin-left: -20px;
   }
 }
-@media (min-width: 420px) and (max-width: 500px) {
-  .nav__iconset {
-    width: 100%;
-  }
-  .phone__view_flex {
-    width: 80%;
-    margin-right: 10rem;
+.nav__left--searchbar label {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  left: 3%;
+  top: 55%;
+  transform: translateY(-50%);
+}
+.nav__left--searchbar input {
+  height: 100%;
+  border: none;
+  width: 25vw;
+  border-radius: 100px;
+  padding: 2rem;
+  padding-left: 4rem;
+  font-size: 1.8rem;
+  outline: none;
+}
+@media (max-width: 800px) {
+  .nav__left--searchbar input {
+    width: 30vw;
   }
 }
-@media (min-width: 320px) and (max-width: 358px) {
-  .nav__iconset {
-    width: 100%;
-  }
-  .phone__view_flex {
-    width: 80%;
-    margin-right: 10rem;
+.nav__left--searchbar input:focus {
+  outline: 1px solid black;
+}
+.nav__left--searchbar input::placeholder {
+  font-size: 18px;
+  color: #999;
+}
+@media (max-width: 600px) {
+  .nav__left--searchbar input::placeholder {
+    font-size: 14px;
   }
 }
-@media (min-width: 320px) and (max-width: 600px) {
-  .nav .nav__searchbar {
-    width: 50rem;
-    margin-left: -10rem;
-  }
-  .nav__login {
-    margin-left: -20rem;
+.nav__right {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.nav__right > * {
+  display: flex;
+}
+.nav__right--line {
+  width: 1px;
+  height: 100%;
+  background: rgba(88, 88, 88, 0.51);
+}
+.nav__right--plus {
+  width: 1.8rem;
+  stroke: white;
+  height: 1.8rem;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 0.7rem;
+  transition: all 0.3s ease;
+}
+.nav__right--plus:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.nav__right--bell {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.7rem;
+  transition: all 0.3s ease;
+}
+.nav__right--bell:hover {
+  transform: rotate(-15deg);
+  cursor: pointer;
+}
+.nav__right__bell {
+  position: relative;
+}
+.nav__right--circle {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: red;
+  position: absolute;
+  top: 22%;
+  left: 52%;
+  border-radius: 50%;
+}
+.nav__right--image {
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.nav__right--image:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.nav__right--name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .nav__right--name {
+    display: none;
   }
 }
-@media (min-width: 320px) and (max-width: 400px) {
-  .nav .nav__searchbar {
-    width: 40rem;
-    margin-left: -15rem;
-  }
+.nav__right svg {
+  height: 3rem;
+  width: 3rem;
 }
-@media (min-width: 414px) and (max-width: 552px) {
-  .nav__login__name {
-    margin-right: 2rem;
-  }
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100svh;
+  background: #e9e7fd !important;
 }
-@media (min-width: 300px) and (max-width: 400px) {
-  .nav__login__name {
-    margin-right: 2rem;
-  }
+.navigation {
+  min-height: 80svh;
+  width: 10rem;
+  padding: 6rem 3rem;
+}
+.navigation.closed {
+  background: red;
+  transform: scale(0);
+  padding: 0;
+  width: 0;
+}
+.nav__icon {
+  color: rgb(136, 136, 136);
+  width: 3rem;
+  height: 3rem;
+  padding: 1.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  margin: -1.2rem 0 0 -1rem;
+  margin-bottom: 2rem;
+  color: #5e5d5d;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+.nav__icon svg {
+  transition: all 0.5s;
+}
+.nav__icon::before {
+  height: 100%;
+  aspect-ratio: 1/1;
+  background: black;
+  z-index: -1;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+}
+.nav__icon:hover::before,
+.nav__icon:first-child::before {
+  opacity: 1;
+  visibility: visible;
+  scale: 2;
+}
+.nav__icon:hover,
+.nav__icon:first-child {
+  color: white;
+}
+.nav__icon:hover svg,
+.nav__icon:first-child svg {
+  scale: 1.2;
 }

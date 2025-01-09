@@ -6,7 +6,7 @@
     &:hover {
       cursor: pointer;
     }
-    &--lines {
+    &--line {
       width: 3rem;
       height: 3rem;
       transition: all 0.3s ease;
@@ -16,15 +16,14 @@
     }
   }
 }
-.dots {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 0.3rem;
+.card__info {
+  position: absolute;
+  right: 2rem;
 }
-.dot {
-  background-color: black;
-  width: 0.7rem;
+.card__info--dot {
   height: 0.7rem;
+  aspect-ratio: 1/1;
+  background: black;
   border-radius: 50%;
+  margin-bottom: 0.3rem;
 }

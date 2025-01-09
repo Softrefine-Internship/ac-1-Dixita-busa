@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -17,21 +17,22 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
   <body>
-    
     <!--------------------- SECTION --------------------->
     <section class="section__container">
       <header>
         <div class="nav">
-          <div class="nav__left">     
-            <ion-icon id="icon" class="nav__left--icons" name="reorder-three-outline"></ion-icon>
-            <h1 class="nav__left--title">Portfolio</h1>           
+          <div class="nav__left">
+            <ion-icon id="hamburger" class="nav__left--hamburger" name="reorder-three-outline"></ion-icon>
+            <div class="nav__left--title">Portfolio</div>
             <div class="nav__left--searchbar">
-              <input class="search" type="search" placeholder="Search"/>
-              <span>
-                <ion-icon class="searchicon" name="search-outline"></ion-icon>
-              </span>  
+              <label for="search">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+                </svg>
+              </label>
+              <input id="search" type="input" placeholder="Search" />
             </div>
-          </div> 
+          </div>
 
           <!--------------------- LOGIN --------------------->
           <div class="nav__right">
@@ -47,505 +48,690 @@
 
             <!--------------------- LINE --------------------->
             <div class="nav__right--line"></div>
-            <img class="nav__right--image" src="img/c.jpg" alt="userimage"/>
-            <h1 class="nav__right--name">Hira R</h1>
+            <div class="nav__right--image">
+              <img src="img/c.jpg" alt="userimage" />
+            </div>
+            <div class="nav__right--name">Hira R</div>
           </div>
+        </div>
+
+        <div class="searchbar-secend">
+          <label for="search">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+            </svg>
+          </label>
+          <input id="search" type="input" placeholder="Search" />
         </div>
       </header>
-        
+
       <!--------------------- MAIN CONTAINER --------------------->
-      <section class="main-container">
-        <div id="nav__icon" class="nav__icon">
-          <main class="phone__view_flex">
-            <section class="nav__iconset">
-              <ion-icon id="homeboxIcon" class="nav__iconset--icon" name="home-outline"></ion-icon>
-              <ion-icon class="nav__iconset--icon" name="person-circle-outline"></ion-icon>
-              <ion-icon id="chatboxIcon" class="nav__iconset--icon" name="chatbox-outline"></ion-icon>
-              <ion-icon class="nav__iconset--icon" name="calendar-outline"></ion-icon>
-              <ion-icon class="nav__iconset--icon" name="time-outline"></ion-icon>
-              <ion-icon class="nav__iconset--icon" name="settings-outline"></ion-icon>
-            </section>
-          </main>
-        </div>
+      <div class="main-container">
+        <nav id="navigation" class="navigation">
+          <section class="nav__iconset">
+            <ion-icon id="homeboxIcon" class="nav__icon" name="home-outline"></ion-icon>
+              <ion-icon class="nav__icon" name="person-circle-outline"></ion-icon>
+              <ion-icon id="chat" class="nav__icon" name="chatbox-outline"></ion-icon>
+              <ion-icon class="nav__icon" name="calendar-outline"></ion-icon>
+              <ion-icon class="nav__icon" name="time-outline"></ion-icon>
+              <ion-icon class="nav__icon" name="settings-outline"></ion-icon>
+          </section>
+        </nav>
 
         <!--------------------- CONTENT --------------------->
-          <div id="content" class="content">
-            <div class="projects">
-              <section class="usercard__column__area">
-                <main class="projects__heading">
-                  <h1 class="projects__heading--h2">Projects</h1>
-                  <h1 class="projects__heading--date">July,  2020</h1>
-                </main>
-                <div class="projects__status">
-                  <div class="projects__status__cards">
-                    <div class="projects__status_info">
-                      <h1 class="projects__status_info--number">45</h1>
-                      <div class="project_info_flex">
-                        <h1 class="projects__status_info--detail">In Progress</h1>
-                        <ion-icon class="projects__status_info--bullet" name="radio-button-off-outline"></ion-icon>
-                      </div>
+        <main id="content" class="content">
+          <div class="projects">
+            <div class="projects__heading">
+              <h2 class="projects__heading--h2">Projects</h2>
+              <div class="projects__heading--date">July, 2020</div>
+            </div>
+            <div class="projects__status">
+              <div class="projects__status_info">
+                <div class="projects__status_info__numbers">45</div>
+                <div class="project_info_flex">
+                  <div class="projects__status_info__des">In Progress</div>
+                  <ion-icon class="projects__status_info__bullet bottom" name="radio-button-off-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="projects__status_info">
+                <div class="projects__status_info__numbers">12</div>
+                <div class="project_info_flex">
+                  <div class="projects__status_info__des">In Progress</div>
+                  <ion-icon class="projects__status_info__bullet bottom" name="radio-button-off-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="projects__status_info">
+                <div class="projects__status_info__numbers">10</div>
+                <div class="project_info_flex">
+                  <div class="projects__status_info__des">Upcoming</div>
+                  <ion-icon class="projects__status_info__bullet bottom" name="radio-button-off-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="projects__status_info">
+                <div class="projects__status_info__numbers">67</div>
+                <div class="project_info_flex">
+                  <div class="projects__status_info__des">Total Project</div>
+                </div>
+              </div>
+              <div class="projects__status-nav">
+                <ion-icon class="projects__status-nav--hamburger" name="reorder-three-outline"></ion-icon>
+                <ion-icon class="projects__status-nav--more" name="grid-outline"></ion-icon>
+              </div>
+            </div>
+
+            <!---------------------  CARD SECTION --------------------->
+            <div class="projects-container">
+              <!--------------------- CARD 1 --------------------->
+              <div class="card">
+                <div class="card__info">
+                  <div class="card__info--dot"></div>
+                  <div class="card__info--dot"></div>
+                </div>
+                <div class="card__date">July 2,2020</div>
+                <div class="card__title">
+                  <h4>Web Designing</h4>
+                  <div class="card__title--category">Prototyping</div>
+                </div>
+                <div class="card__progress">
+                  <div class="card__progress--label">Progress</div>
+                  <main class="card__progress--level">
+                    <div class="card__progress--progress" style="width: 90%"></div>
+                  </main>
+                  <h1 class="card__progress--percentage">90%</h1>
+                </div>
+                <div class="card__line"></div>
+                <div class="card__footer">
+                  <div class="card__footer--image">
+                    <div class="card__footer--image-size">
+                      <img src="img/c2.jpg" alt="" />
                     </div>
-                    <div>
-                      <h1 class="projects__status_info--number">12</h1>
-                      <div class="project_info_flex">
-                        <h1 class="projects__status_info--detail"> In Progress </h1>
-                        <ion-icon class="projects__status_info--bullet" name="radio-button-off-outline"></ion-icon>
-                      </div>
-                    </div>
-                    <div>
-                      <h1 class="projects__status_info--number">10</h1>
-                      <div class="project_info_flex">
-                        <h1 class="projects__status_info--detail"> Upcoming </h1>
-                        <ion-icon class="projects__status_info--bullet" name="radio-button-off-outline"></ion-icon>
-                      </div>
-                    </div>
-                    <div>
-                      <h1 class="projects__status_info--number">67</h1>
-                      <div class="project_info_flex">
-                        <h1 class="projects__status_info--detail"> Total Project </h1>
-                      </div>
+                    <div class="card__footer--image-size">
+                      <img src="img/c6.jpg" alt="" />
                     </div>
                   </div>
-                  <div class="projects__status_header">
-                    <ion-icon class="projects__status_header--icons--lines" name="reorder-three-outline"></ion-icon>
-                    <ion-icon class="projects__status_header--icon" name="grid-outline"></ion-icon>
+                  <ion-icon class="card__footer--plus" name="add-circle"></ion-icon>
+                  <div class="card__footer--button">
+                    <button class="card__footer--button-btn">2 Days Left</button>
                   </div>
                 </div>
-              </section>
+              </div>
 
-              <!---------------------  CARD SECTION --------------------->
-              <section class="progress">
-                <article class="cards_flex">
-                  <div class="cards_flex--card1">
-                    
-                    <!--------------------- CARD 1 --------------------->
-                    <article class="card">
-                      <main class="card__info">
-                        <div class="card__date">July 2, 2020</div>
-                        <div class="card__info--dots">
-                          <div class="card__info--dot"></div>
-                          <div class="card__info--dot"></div>
-                        </div>
-                      </main>
-                      <h1 class="card__title">Web Designing</h1>
-                      <h1 class="card__title--name">Prototyping</h1>
-                      <h1 class="card__progress--subname">Progress</h1>
-                      <main class="card__progress">
-                        <div  class="card__progress--progress" style="width: 90%"></div>
-                      </main>
-                      <h1 class="card__progress--percentage">90%</h1>
-                      <div class="card__divider"></div>
-                      <section class="card__footer">
-                        <div class="card__footer--image">
-                          <img class="card__footer--image--size" src="img/c2.jpg" alt="user"/>
-                          <img class="card__footer--image--size" src="img/c6.jpg" alt="user"/>
-                          <ion-icon class="card__footer--plus" name="add-circle"></ion-icon>
-                        </div>
-                        <button class="card__footer--button">2 Days Left</button>
-                      </section>
-                    </article>
+              <!--------------------- CARD 2 --------------------->
+              <div class="card">
+                <div class="card__info">
+                  <div class="card__info--dot"></div>
+                  <div class="card__info--dot"></div>
+                </div>
+                <div class="card__date">July 5, 2020</div>
+                <div class="card__title">
+                  <h4>Mobile App</h4>
+                  <div class="card__title--category">Shopping</div>
+                </div>
+                <div class="card__progress">
+                  <div class="card__progress--label">Progress</div>
+                  <main class="card2__progress--level">
+                    <div class="card2__progress--progress" style="width: 30%"></div>
+                  </main>
+                  <h1 class="card2__progress--percentage">30%</h1>
+                </div>
+                <div class="card__line"></div>
+                <div class="card__footer">
+                  <div class="card__footer--image">
+                    <div class="card__footer--image-size">
+                      <img src="img/c3.jpg" alt="" />
+                    </div>
+                    <div class="card__footer--image-size">
+                      <img src="img/c4.jpg" alt="" />
+                    </div>
                   </div>
+                  <ion-icon class="card__footer--plus" name="add-circle"></ion-icon>
+                  <div class="card__footer--button">
+                    <button class="card__footer--button-btn">3 week Left</button>
+                  </div>
+                </div>
+              </div>
 
-                  <!--------------------- CARD 2 --------------------->
-                  <div class="cards_flex--card2">
-                    <article class="card2">
-                      <main class="card2__info">
-                        <div class="card2__date">July 5, 2020</div>
-                        <div class="card__info--dots">
-                          <div class="card__info--dot"></div>
-                          <div class="card__info--dot"></div>
-                        </div>
-                      </main>
-                      <h1 class="card2__title">Mobile App</h1>
-                      <h1 class="card2__title--name">Shopping</h1>
-                      <h1 class="card2__progress--subname">Progress</h1>
-                      <main class="card2__progress">
-                        <div
-                          class="card2__progress--progress"
-                          style="width: 30%"
-                        ></div>
-                      </main>
-                      <h1 class="card2__progress--percentage">30%</h1>
-                      <div class="card2__divider"></div>
-                      <section class="card__footer2">
-                        <div class="card__footer2--image2">
-                          <img class="card__footer2--image2--size" src="img/c3.jpg" alt="user"/>
-                          <img class="card__footer2--image2--size" src="img/c4.jpg" alt="user"/>
-                          <ion-icon class="card__footer2--plus2" name="add-circle"></ion-icon>
-                        </div>
-                        <button class="card__footer2--button2">3 week Left</button>
-                      </section>
-                    </article>
+              <!--------------------- CARD 3 --------------------->
+              <div class="card">
+                <div class="card__info">
+                  <div class="card__info--dot"></div>
+                  <div class="card__info--dot"></div>
+                </div>
+                <div class="card__date">July 10,2020</div>
+                <div class="card__title">
+                  <h4>Dashboard</h4>
+                  <div class="card__title--category">Medical</div>
+                </div>
+                <div class="card__progress">
+                  <div class="card__progress--label">Progress</div>
+                  <main class="card3__progress--level">
+                    <div class="card3__progress--progress" style="width: 50%"></div>
+                  </main>
+                  <h1 class="card3__progress--percentage">50%</h1>
+                </div>
+                <div class="card__line"></div>
+                <div class="card__footer">
+                  <div class="card__footer--image">
+                    <div class="card__footer--image-size">
+                      <img src="img/c5.jpg" alt="" />
+                    </div>
+                    <div class="card__footer--image-size">
+                      <img src="img/c7.jpg" alt="" />
+                    </div>
                   </div>
-                </article>
+                  <ion-icon class="card__footer--plus" name="add-circle"></ion-icon>
+                  <div class="card__footer--button">
+                    <button class="card__footer--button-btn">2 week Left</button>
+                  </div>
+                </div>
+              </div>
 
-                <!--------------------- CARD 3 --------------------->
-                <article class="cards_flex">
-                  <div class="cards_flex--card3">
-                    <article class="card3">
-                      <main class="card3__info">
-                        <div class="card3__date">July 15, 2020</div>
-                        <div class="card__info--dots">
-                          <div class="card__info--dot"></div>
-                          <div class="card__info--dot"></div>
-                        </div>
-                      </main>
-                      <h1 class="card3__title">Dashboard</h1>
-                      <h1 class="card3__title--name">Medical</h1>
-                      <h1 class="card3__progress--subname">Progress</h1>
-                      <main class="card3__progress">
-                        <div
-                          class="card3__progress--progress"
-                          style="width: 50%"
-                        ></div>
-                      </main>
-                      <h1 class="card3__progress--percentage">50%</h1>
-                      <div class="card3__divider"></div>
-                      <section class="card__footer3">
-                        <div class="card__footer3--image3">
-                          <img class="card__footer3--image3--size" src="img/c5.jpg" alt="user"/>
-                          <img class="card__footer3--image3--size" src="img/c7.jpg" alt="user"/>
-                          <ion-icon class="card__footer3--plus3" name="add-circle"></ion-icon>
-                        </div>
-                        <button class="card__footer3--button3">2 week Left</button>
-                      </section>
-                    </article>
+              <!--------------------- CARD 4 --------------------->
+              <div class="card">
+                <div class="card__info">
+                  <div class="card__info--dot"></div>
+                  <div class="card__info--dot"></div>
+                </div>
+                <div class="card__date">July 15, 2020</div>
+                <div class="card__title">
+                  <h4>Web Designing</h4>
+                  <div class="card__title--category">Wireframing</div>
+                </div>
+                <div class="card__progress">
+                  <div class="card__progress--label">Progress</div>
+                  <main class="card4__progress--level">
+                    <div class="card4__progress--progress" style="width: 20%"></div>
+                  </main>
+                  <h1 class="card4__progress--percentage">20%</h1>
+                </div>
+                <div class="card__line"></div>
+                <div class="card__footer">
+                  <div class="card__footer--image">
+                    <div class="card__footer--image-size">
+                      <img src="img/c1.jpg" alt="" />
+                    </div>
+                    <div class="card__footer--image-size">
+                      <img src="img/c8.jpg" alt="" />
+                    </div>
                   </div>
-                  
-                  <!--------------------- CARD 4 --------------------->
-                  <div class="cards_flex--card4">
-                    <article class="card4">
-                      <main class="card4__info">
-                        <div class="card4__date">July 10, 2020</div>
-                        <div class="card__info--dots">
-                          <div class="card__info--dot"></div>
-                          <div class="card__info--dot"></div>
-                        </div>
-                      </main>
-                      <h1 class="card4__title">Web Designing</h1>
-                      <h1 class="card4__title--name">Wireframing</h1>
-                      <h1 class="card4__progress--subname">Progress</h1>
-                      <main class="card4__progress">
-                        <div
-                          class="card4__progress--progress"
-                          style="width: 20%"
-                        ></div>
-                      </main>
-                      <h1 class="card4__progress--percentage">20%</h1>
-                      <div class="card4__divider"></div>
-                      <section class="card__footer4">
-                        <div class="card__footer4--image4">
-                          <img class="card__footer4--image4--size" src="img/c1.jpg" alt="user"/>
-                          <img class="card__footer4--image4--size" src="img/c8.jpg" alt="user"/>
-                          <ion-icon class="card__footer4--plus4" name="add-circle"></ion-icon>
-                        </div>
-                        <button class="card__footer4--button4">3 week Left</button>
-                      </section>
-                    </article>
+                  <ion-icon class="card__footer--plus" name="add-circle"></ion-icon>
+                  <div class="card__footer--button">
+                    <button class="card__footer--button-btn">3 week Left</button>
                   </div>
-                </article>
+                </div>
+              </div>
 
-                <!--------------------- CARD 5 --------------------->
-                <article class="cards_flex">
-                  <div class="cards_flex--card5">
-                    <article class="card5">
-                      <main class="card5__info">
-                        <div class="card5__date">June 2, 2020</div>
-                        <div class="card__info--dots">
-                          <div class="card__info--dot"></div>
-                          <div class="card__info--dot"></div>
-                        </div>
-                      </main>
-                      <h1 class="card5__title">Web App</h1>
-                      <h1 class="card5__title--name">Medical</h1>
-                      <h1 class="card5__progress--subname">Progress</h1>
-                      <main class="card5__progress">
-                        <div
-                          class="card5__progress--progress"
-                          style="width: 80%"
-                        ></div>
-                      </main>
-                      <h1 class="card5__progress--percentage">80%</h1>
-                      <div class="card5__divider"></div>
-                      <section class="card__footer5">
-                        <div class="card__footer5--image5">
-                          <img class="card__footer5--image5--size" src="img/c2.jpg" alt="user"/>
-                          <img class="card__footer5--image5--size" src="img/c6.jpg" alt="user"/>
-                          <ion-icon class="card__footer5--plus5" name="add-circle"></ion-icon>
-                        </div>
-                        <button class="card__footer5--button5">
-                          5 week Left
-                        </button>
-                      </section>
-                    </article>
+              <!--------------------- CARD 5 --------------------->
+              <div class="card">
+                <div class="card__info">
+                  <div class="card__info--dot"></div>
+                  <div class="card__info--dot"></div>
+                </div>
+                <div class="card__date">July 20,2020</div>
+                <div class="card__title">
+                  <h4>Web App</h4>
+                  <div class="card__title--category">Prototyping</div>
+                </div>
+                <div class="card__progress">
+                  <div class="card__progress--label">Progress</div>
+                  <main class="card5__progress--level">
+                    <div class="card5__progress--progress" style="width: 80%"></div>
+                  </main>
+                  <h1 class="card5__progress--percentage">80%</h1>
+                </div>
+                <div class="card__line"></div>
+                <div class="card__footer">
+                  <div class="card__footer--image">
+                    <div class="card__footer--image-size">
+                      <img src="img/c2.jpg" alt="" />
+                    </div>
+                    <div class="card__footer--image-size">
+                      <img src="img/c6.jpg" alt="" />
+                    </div>
                   </div>
+                  <ion-icon class="card__footer--plus" name="add-circle"></ion-icon>
+                  <div class="card__footer--button">
+                    <button class="card__footer--button-btn">2 Days Left</button>
+                  </div>
+                </div>
+              </div>
 
-                  <!--------------------- CARD 6 --------------------->
-                  <div class="cards_flex--card6">
-                    <article class="card2">
-                      <main class="card2__info">
-                        <div class="card2__date">May 10, 2020</div>
-                        <div class="card__info--dots">
-                          <div class="card__info--dot"></div>
-                          <div class="card__info--dot"></div>
-                        </div>
-                      </main>
-                      <h1 class="card2__title">Desktop App</h1>
-                      <h1 class="card2__title--name">Shopping</h1>
-                      <h1 class="card2__progress--subname">Progress</h1>
-                      <main class="card2__progress">
-                        <div
-                          class="card2__progress--progress"
-                          style="width: 60%"
-                        ></div>
-                      </main>
-                      <h1 class="card2__progress--percentage">60%</h1>
-                      <div class="card2__divider"></div>
-                      <section class="card__footer2">
-                        <div class="card__footer2--image2">
-                          <img class="card__footer2--image2--size" src="img/c3.jpg" alt="user"/>
-                          <img class="card__footer2--image2--size" src="img/c4.jpg" alt="user"/>
-                          <ion-icon class="card__footer2--plus2" name="add-circle"></ion-icon>
-                        </div>
-                        <button class="card__footer2--button2">4 week Left</button>
-                      </section>
-                    </article>
+              <!--------------------- CARD 6 --------------------->
+              <div class="card">
+                <div class="card__info">
+                  <div class="card__info--dot"></div>
+                  <div class="card__info--dot"></div>
+                </div>
+                <div class="card__date">July 25,2020</div>
+                <div class="card__title">
+                  <h4>Mobile App</h4>
+                  <div class="card__title--category">Shopping</div>
+                </div>
+                <div class="card__progress">
+                  <div class="card__progress--label">Progress</div>
+                  <main class="card2__progress--level">
+                    <div class="card2__progress--progress" style="width: 60%"></div>
+                  </main>
+                  <h1 class="card2__progress--percentage">60%</h1>
+                </div>
+                <div class="card__line"></div>
+                <div class="card__footer">
+                  <div class="card__footer--image">
+                    <div class="card__footer--image-size">
+                      <img src="img/c3.jpg" alt="" />
+                    </div>
+                    <div class="card__footer--image-size">
+                      <img src="img/c4.jpg" alt="" />
+                    </div>
                   </div>
-                </article>
+                  <ion-icon class="card__footer--plus" name="add-circle"></ion-icon>
+                  <div class="card__footer--button">
+                    <button class="card__footer--button-btn">4 week Left</button>
+                  </div>
+                </div>
+              </div>
 
-                <!--------------------- CARD 7 --------------------->
-                <article class="cards_flex">
-                  <div class="cards_flex--card3">
-                    <article class="card3">
-                      <main class="card3__info">
-                        <div class="card3__date">July 15, 2020</div>
-                        <div class="card__info--dots">
-                          <div class="card__info--dot"></div>
-                          <div class="card__info--dot"></div>
-                        </div>
-                      </main>
-                      <h1 class="card3__title">Dashboard</h1>
-                      <h1 class="card3__title--name">Medical</h1>
-                      <h1 class="card3__progress--subname">Progress</h1>
-                      <main class="card3__progress">
-                        <div
-                          class="card3__progress--progress"
-                          style="width: 50%"
-                        ></div>
-                      </main>
-                      <h1 class="card3__progress--percentage">50%</h1>
-                      <div class="card3__divider"></div>
-                      <section class="card__footer3">
-                        <div class="card__footer3--image3">
-                          <img class="card__footer3--image3--size" src="img/c5.jpg" alt="user"/>
-                          <img class="card__footer3--image3--size" src="img/c7.jpg" alt="user"/>
-                          <ion-icon class="card__footer3--plus3" name="add-circle"></ion-icon>
-                        </div>
-                        <button class="card__footer3--button3">2 week Left</button>
-                      </section>
-                    </article>
+              <!--------------------- CARD 7 --------------------->
+              <div class="card">
+                <div class="card__info">
+                  <div class="card__info--dot"></div>
+                  <div class="card__info--dot"></div>
+                </div>
+                <div class="card__date">July 2, 2020</div>
+                <div class="card__title">
+                  <h4>Dashboard</h4>
+                  <div class="card__title--category">Medical</div>
+                </div>
+                <div class="card__progress">
+                  <div class="card__progress--label">Progress</div>
+                  <main class="card3__progress--level">
+                    <div class="card3__progress--progress" style="width: 50%"></div>
+                  </main>
+                  <h1 class="card3__progress--percentage">50%</h1>
+                </div>
+                <div class="card__line"></div>
+                <div class="card__footer">
+                  <div class="card__footer--image">
+                    <div class="card__footer--image-size">
+                      <img src="img/c5.jpg" alt="" />
+                    </div>
+                    <div class="card__footer--image-size">
+                      <img src="img/c7.jpg" alt="" />
+                    </div>
                   </div>
+                  <ion-icon class="card__footer--plus" name="add-circle"></ion-icon>
+                  <div class="card__footer--button">
+                    <button class="card__footer--button-btn">2 Days Left</button>
+                  </div>
+                </div>
+              </div>
 
-                  <!--------------------- CARD 8 --------------------->
-                  <div class="cards_flex--card4">
-                    <article class="card4">
-                      <main class="card4__info">
-                        <div class="card4__date">July 10, 2020</div>
-                        <div class="card__info--dots">
-                          <div class="card__info--dot"></div>
-                          <div class="card__info--dot"></div>
-                        </div>
-                      </main>
-                      <h1 class="card4__title">Web Designing</h1>
-                      <h1 class="card4__title--name">Wireframing</h1>
-                      <h1 class="card4__progress--subname">Progress</h1>
-                      <main class="card4__progress">
-                        <div
-                          class="card4__progress--progress"
-                          style="width: 20%"
-                        ></div>
-                      </main>
-                      <h1 class="card4__progress--percentage">20%</h1>
-                      <div class="card4__divider"></div>
-                      <section class="card__footer4">
-                        <div class="card__footer4--image4">
-                          <img class="card__footer4--image4--size" src="img/c1.jpg" alt="user"/>
-                          <img class="card__footer4--image4--size" src="img/c8.jpg" alt="user"/>
-                          <ion-icon class="card__footer4--plus4" name="add-circle"></ion-icon>
-                        </div>
-                        <button class="card__footer4--button4">3 week Left</button>
-                      </section>
-                    </article>
+              <!--------------------- CARD 8 --------------------->
+              <div class="card">
+                <div class="card__info">
+                  <div class="card__info--dot"></div>
+                  <div class="card__info--dot"></div>
+                </div>
+                <div class="card__date">July 10, 2020</div>
+                <div class="card__title">
+                  <h4>Web Designing</h4>
+                  <div class="card__title--category">Wireframing</div>
+                </div>
+                <div class="card__progress">
+                  <div class="card__progress--label">Progress</div>
+                  <main class="card4__progress--level">
+                    <div class="card4__progress--progress" style="width: 20%"></div>
+                  </main>
+                  <h1 class="card4__progress--percentage">20%</h1>
+                </div>
+                <div class="card__line"></div>
+                <div class="card__footer">
+                  <div class="card__footer--image">
+                    <div class="card__footer--image-size">
+                      <img src="img/c1.jpg" alt="" />
+                    </div>
+                    <div class="card__footer--image-size">
+                      <img src="img/c8.jpg" alt="" />
+                    </div>
                   </div>
-                </article>
-              </section>
+                  <ion-icon class="card__footer--plus" name="add-circle"></ion-icon>
+                  <div class="card__footer--button">
+                    <button class="card__footer--button-btn">2 Days Left</button>
+                  </div>
+                </div>
+              </div>
+
+              <!--------------------- CARD 9 --------------------->
+              <div class="card">
+                <div class="card__info">
+                  <div class="card__info--dot"></div>
+                  <div class="card__info--dot"></div>
+                </div>
+                <div class="card__date">July 2,2020</div>
+                <div class="card__title">
+                  <h4>Web App</h4>
+                  <div class="card__title--category">Prototyping</div>
+                </div>
+                <div class="card__progress">
+                  <div class="card__progress--label">Progress</div>
+                  <main class="card5__progress--level">
+                    <div class="card5__progress--progress" style="width: 30%"></div>
+                  </main>
+                  <h1 class="card5__progress--percentage">30%</h1>
+                </div>
+                <div class="card__line"></div>
+                <div class="card__footer">
+                  <div class="card__footer--image">
+                    <div class="card__footer--image-size">
+                      <img src="img/c2.jpg" alt="" />
+                    </div>
+                    <div class="card__footer--image-size">
+                      <img src="img/c6.jpg" alt="" />
+                    </div>
+                  </div>
+                  <ion-icon class="card__footer--plus" name="add-circle"></ion-icon>
+                  <div class="card__footer--button">
+                    <button class="card__footer--button-btn">2 Days Left</button>
+                  </div>
+                </div>
+              </div>
+
+              <!--------------------- CARD 10 --------------------->
+              <div class="card">
+                <div class="card__info">
+                  <div class="card__info--dot"></div>
+                  <div class="card__info--dot"></div>
+                </div>
+                <div class="card__date">July 2,2020</div>
+                <div class="card__title">
+                  <h4>Mobile App</h4>
+                  <div class="card__title--category">Shopping</div>
+                </div>
+                <div class="card__progress">
+                  <div class="card__progress--label">Progress</div>
+                  <main class="card2__progress--level">
+                    <div class="card2__progress--progress" style="width: 60%"></div>
+                  </main>
+                  <h1 class="card2__progress--percentage">60%</h1>
+                </div>
+                <div class="card__line"></div>
+                <div class="card__footer">
+                  <div class="card__footer--image">
+                    <div class="card__footer--image-size">
+                      <img src="img/c3.jpg" alt="" />
+                    </div>
+                    <div class="card__footer--image-size">
+                      <img src="img/c4.jpg" alt="" />
+                    </div>
+                  </div>
+                  <ion-icon class="card__footer--plus" name="add-circle"></ion-icon>
+                  <div class="card__footer--button">
+                    <button class="card__footer--button-btn">2 Days Left</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          
+
           <!--------------------- CLIENT MESSAGES --------------------->
-          <div class="col_3">
-            <main class="smallcard_scr">
-              <div class="msgflex">
-                <div>
-                  <h1 class="msgflex__txt">Client Messages</h1>
-                </div>
-                <div class="msgflex__txt--icon">
-                  <ion-icon class="msgflex__searchicon" name="search-outline"></ion-icon>
-                  <div class="dotfooter__txt--opt">
-                    <div class="dotfooter__txt--opt-dot"></div>
-                    <div class="dotfooter__txt--opt-dot"></div>
+          <div class="messages">
+            <div class="msgflex">
+              <h4>Client Messages</h4>
+                <ion-icon class="msgflex--icon" name="search-outline"></ion-icon>
+              <div class="msgflex--options">
+                <div class="msgflex--options-dot"></div>
+                <div class="msgflex--options-dot"></div>
+              </div>
+            </div>
+
+            <div class="client__info">
+              <!--------------------- CLIENT 1 --------------------->
+              <div class="client">
+                <div class="client__flex">
+                  <div class="client__img">
+                    <img src="img/c1.jpg" alt="profile image" />
                   </div>
+                </div>
+                <div class="client__title">
+                  <div class="client__header">
+                    <div class="client__name">David</div>
+                    <ion-icon class="client__star1" name="star-outline"></ion-icon>
+                    <ion-icon class="client__star2" name="star"></ion-icon>
+                  </div>
+                  <div class="client__review">
+                    Hey tell me about progress of project ? Waiting<br />
+                    for your response
+                  </div>
+                  <div class="client__date">21 July</div>
                 </div>
               </div>
-              <div class="row2">
-                <section class="client">
-                  <div class="client__flex">
-                    <div>
-                      <img class="client__img" src="img/c1.jpg" alt="avatar image"/>
-                    </div>
-                    <div class="client_desc">
-                      <div class="client__iconflex">
-                        <h1 class="client__name">David</h1>
-                        <ion-icon class="client__star1" name="star-outline"></ion-icon>
-                        <ion-icon class="client__star2" name="star"></ion-icon>
-                      </div>
-                      <h1 class="client__review">
-                        Hey tell me about progress of project ? Waiting<br />
-                        for your response
-                      </h1>
-                      <h1 class="client__date">21 July</h1>
-                    </div>
+
+              <!--------------------- CLIENT 2 --------------------->
+              <div class="client">
+                <div class="client__flex">
+                  <div class="client__img">
+                    <img src="img/c3.jpg" alt="profile image" />
                   </div>
-                </section>
-                <section class="client">
-                  <div class="client__flex">
-                    <div>
-                      <img class="client__img" src="img/c3.jpg" alt="avatar image"/>
-                    </div>
-                    <div class="client_description">
-                      <div class="client__iconflex">
-                        <h1 class="client__name">Stephanie</h1>
-                        <ion-icon class="client__star1" name="star-outline"></ion-icon>
-                        <ion-icon class="client__star2" name="star"></ion-icon>
-                      </div>
-                      <h1 class="client__review">
-                        I got your first assignment.It was quite good👌<br />
-                        You can work on next assignment
-                      </h1>
-                      <h1 class="client__date">19 July</h1>
-                    </div>
+                </div>
+                <div class="client__title">
+                  <div class="client__header">
+                    <div class="client__name">Stephanie</div>
+                    <ion-icon class="client__star1" name="star-outline"></ion-icon>
+                    <ion-icon class="client__star2" name="star"></ion-icon>
                   </div>
-                </section>
-                <section class="client">
-                  <div class="client__flex">
-                    <div>
-                      <img class="client__img" src="img/c7.jpg" alt="avatar image"/>
-                    </div>
-                    <div class="client_description">
-                      <div class="client__iconflex">
-                        <h1 class="client__name">William</h1>
-                        <ion-icon class="client__star1" name="star-outline"></ion-icon>
-                        <ion-icon class="client__star2" name="star"></ion-icon>
-                      </div>
-                      <h1 class="client__review">
-                        I want some changes in previous work you sent<br />
-                        me. Waiting for your reply.
-                      </h1>
-                      <h1 class="client__date">17 July</h1>
-                    </div>
+                  <div class="client__review">
+                    I got your first assignment.It was quite good👌<br />
+                    You can work on next assignment
                   </div>
-                </section>
-                <section class="client">
-                  <div class="client__flex">
-                    <div>
-                      <img class="client__img" src="img/c4.jpg" alt="avatar image"/>
-                    </div>
-                    <div class="client_description">
-                      <div class="client__iconflex">
-                        <h1 class="client__name">Alona</h1>
-                        <ion-icon class="client__star1" name="star-outline"></ion-icon>
-                        <ion-icon class="client__star2" name="star"></ion-icon>
-                      </div>
-                      <h1 class="client__review">
-                        I am really impressed from your work 😄<br />Keep doing
-                        great work
-                      </h1>
-                      <h1 class="client__date">15 July</h1>
-                    </div>
+                  <div class="client__date">19 July</div>
+                </div>
+              </div>
+
+              <!--------------------- CLIENT 3 --------------------->
+              <div class="client">
+                <div class="client__flex">
+                  <div class="client__img">
+                    <img src="img/c7.jpg" alt="profile image" />
                   </div>
-                </section>
-                <section class="client">
-                  <div class="client__flex">
-                    <div>
-                      <img class="client__img" src="img/c8.jpg" alt="avatar image"/>
-                    </div>
-                    <div class="client_description">
-                      <div class="client__iconflex">
-                        <h1 class="client__name">Hira</h1>
-                        <ion-icon class="client__star1" name="star-outline"></ion-icon>
-                        <ion-icon class="client__star2" name="star"></ion-icon>
-                      </div>
-                      <h1 class="client__review">
-                        When you start redesign of app? Previous. <br />project
+                </div>
+                <div class="client__title">
+                  <div class="client__header">
+                    <div class="client__name">William</div>
+                    <ion-icon class="client__star1" name="star-outline"></ion-icon>
+                    <ion-icon class="client__star2" name="star"></ion-icon>
+                  </div>
+                  <div class="client__review">
+                    I want some changes in previous work you sent<br />
+                    me. Waiting for your reply.
+                  </div>
+                  <div class="client__date">17 July</div>
+                </div>
+              </div>
+
+              <!--------------------- CLIENT 4 --------------------->
+              <div class="client">
+                <div class="client__flex">
+                  <div class="client__img">
+                    <img src="img/c4.jpg" alt="profile image" />
+                  </div>
+                </div>
+                <div class="client__title">
+                  <div class="client__header">
+                    <div class="client__name">Alona</div>
+                    <ion-icon class="client__star1" name="star-outline"></ion-icon>
+                    <ion-icon class="client__star2" name="star"></ion-icon>
+                  </div>
+                  <div class="client__review">
+                    I am really impressed from your work 😄<br />Keep doing
+                    great work
+                  </div>
+                  <div class="client__date">15 July</div>
+                </div>
+              </div>
+
+              <!--------------------- CLIENT 5 --------------------->
+              <div class="client">
+                <div class="client__flex">
+                  <div class="client__img">
+                    <img src="img/c8.jpg" alt="profile image" />
+                  </div>
+                </div>
+                <div class="client__title">
+                  <div class="client__header">
+                    <div class="client__name">Hira</div>
+                    <ion-icon class="client__star1" name="star-outline"></ion-icon>
+                    <ion-icon class="client__star2" name="star"></ion-icon>
+                  </div>
+                  <div class="client__review">
+                    When you start redesign of app? Previous. <br />project
                         was perfect 😍
-                      </h1>
-                      <h1 class="client__date">21 July</h1>
-                    </div>
                   </div>
-                </section>
-                <section class="client">
-                  <div class="client__flex">
-                    <div>
-                      <img class="client__img" src="img/c1.jpg" alt="avatar image"/>
-                    </div>
-                    <div class="client_description">
-                      <div class="client__iconflex">
-                        <h1 class="client__name">Gulam</h1>
-                        <ion-icon class="client__star1" name="star-outline"></ion-icon>
-                        <ion-icon class="client__star2" name="star"></ion-icon>
-                      </div>
-                      <h1 class="client__review">
-                        I want to let you know I am agree on that decisions
-                      </h1>
-                      <h1 class="client__date">24 July</h1>
-                    </div>
-                  </div>
-                </section>
+                  <div class="client__date">21 July</div>
+                </div>
               </div>
-            </main>
+
+              <!--------------------- CLIENT 6 --------------------->
+              <div class="client">
+                <div class="client__flex">
+                  <div class="client__img">
+                    <img src="img/c1.jpg" alt="profile image" />
+                  </div>
+                </div>
+                <div class="client__title">
+                  <div class="client__header">
+                    <div class="client__name">Gulam</div>
+                    <ion-icon class="client__star1" name="star-outline"></ion-icon>
+                    <ion-icon class="client__star2" name="star"></ion-icon>
+                  </div>
+                  <div class="client__review">
+                    I want to let you know I am agree on that decisions
+                  </div>
+                  <div class="client__date">24 July</div>
+                </div>
+              </div>
+
+              <!--------------------- CLIENT 7 --------------------->
+              <div class="client">
+                <div class="client__flex">
+                  <div class="client__img">
+                    <img src="img/c3.jpg" alt="profile image" />
+                  </div>
+                </div>
+                <div class="client__title">
+                  <div class="client__header">
+                    <div class="client__name">Stephanie</div>
+                    <ion-icon class="client__star1" name="star-outline"></ion-icon>
+                    <ion-icon class="client__star2" name="star"></ion-icon>
+                  </div>
+                  <div class="client__review">
+                    I got your first assignment.It was quite good👌<br />
+                    You can work on next assignment
+                  </div>
+                  <div class="client__date">19 July</div>
+                </div>
+              </div>
+
+              <!--------------------- CLIENT 8 --------------------->
+              <div class="client">
+                <div class="client__flex">
+                  <div class="client__img">
+                    <img src="img/c7.jpg" alt="profile image" />
+                  </div>
+                </div>
+                <div class="client__title">
+                  <div class="client__header">
+                    <div class="client__name">William</div>
+                    <ion-icon class="client__star1" name="star-outline"></ion-icon>
+                    <ion-icon class="client__star2" name="star"></ion-icon>
+                  </div>
+                  <div class="client__review">
+                    I want some changes in previous work you sent<br />
+                    me. Waiting for your reply.
+                  </div>
+                  <div class="client__date">17 July</div>
+                </div>
+              </div>
+
+              <!--------------------- CLIENT 9 --------------------->
+              <div class="client">
+                <div class="client__flex">
+                  <div class="client__img">
+                    <img src="img/c4.jpg" alt="profile image" />
+                  </div>
+                </div>
+                <div class="client__title">
+                  <div class="client__header">
+                    <div class="client__name">Alona</div>
+                    <ion-icon class="client__star1" name="star-outline"></ion-icon>
+                    <ion-icon class="client__star2" name="star"></ion-icon>
+                  </div>
+                  <div class="client__review">
+                    I am really impressed from your work 😄<br />Keep doing
+                    great work
+                  </div>
+                  <div class="client__date">15 July</div>
+                </div>
+              </div>
+
+              <!--------------------- CLIENT 10 --------------------->
+              <div class="client">
+                <div class="client__flex">
+                  <div class="client__img">
+                    <img src="img/c8.jpg" alt="profile image" />
+                  </div>
+                </div>
+                <div class="client__title">
+                  <div class="client__header">
+                    <div class="client__name">Hira</div>
+                    <ion-icon class="client__star1" name="star-outline"></ion-icon>
+                    <ion-icon class="client__star2" name="star"></ion-icon>
+                  </div>
+                  <div class="client__review">
+                    When you start redesign of app? Previous. <br />project
+                        was perfect 😍
+                  </div>
+                  <div class="client__date">21 July</div>
+                </div>
+              </div>
+
+              <!--------------------- CLIENT 11 --------------------->
+              <div class="client">
+                <div class="client__flex">
+                  <div class="client__img">
+                    <img src="img/c1.jpg" alt="profile image" />
+                  </div>
+                </div>
+                <div class="client__title">
+                  <div class="client__header">
+                    <div class="client__name">Gulam</div>
+                    <ion-icon class="client__star1" name="star-outline"></ion-icon>
+                    <ion-icon class="client__star2" name="star"></ion-icon>
+                  </div>
+                  <div class="client__review">
+                    I want to let you know I am agree on that decisions
+                  </div>
+                  <div class="client__date">24 July</div>
+                </div>
+              </div>
+            </div>
           </div>
-      </section>
+        </main>
+      </div>
     </section>
-
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const chatboxIcon = document.getElementById("chatboxIcon");
-        const content = document.getElementById("content");
-        const homeboxIcon = document.getElementById("homeboxIcon");
-        const iconColumnFlex = document.querySelector(".nav__iconset");
+      let hamburger = document.getElementById("hamburger")
+      let nav = document.getElementById("navigation")
+      let chat = document.getElementById("chat")
+      let content = document.getElementById("content")
 
-        if (chatboxIcon && content && homeboxIcon && iconColumnFlex) {
-          chatboxIcon.addEventListener("click", function handleChatboxClick() {
-            if (window.innerWidth < 768) {
-              console.log("Chatbox clicked");
-              content.classList.add("hidden");
-              chatboxIcon.classList.add("");
-              iconColumnFlex.classList.add("hide-bg");
-            }
-          });
+      console.log(hamburger)
+      hamburger.addEventListener("click",()=>{
+          nav.classList.toggle("closed")
+      })
 
-          homeboxIcon.addEventListener("click", function handleHomeboxClick() {
-            if (window.innerWidth < 768) {
-              console.log("Homebox clicked");
-              content.classList.remove("hidden");
-              chatboxIcon.classList.remove("");
-              iconColumnFlex.classList.toggle("hide-bg");
-            }
-          });
-        } else {
-          console.error("Element not found");
-        }
-      });
+      chat.addEventListener("click",()=>{
+          content.classList.toggle("chat-open")
+      })
     </script>
   </body>
 </html>

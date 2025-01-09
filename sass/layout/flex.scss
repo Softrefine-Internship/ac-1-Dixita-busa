@@ -32,7 +32,7 @@
   @media (min-width: 320px) and (max-width: 420px) {
     gap: 3rem;
   }
-  &--icons {
+  &--icon {
     color: black;
     width: 2.3rem;
     height: 2.3rem;
@@ -63,299 +63,147 @@
   align-items: center;
   justify-content: space-between;
 }
-.projects_status {
+.projects {
+  width: 65%;
+  height: 85%;
+  background: #fcfcfc;
+  border-radius: 3rem 3rem 0 0;
+  padding-inline: 5rem;
+}
+@media (max-width: 1000px) {
+  .projects {
+    width: 55%;
+    height: 105%;
+  }
+}
+@media (max-width: 800px) {
+  .projects {
+    width: 100%;
+    padding-inline: 3rem;
+  }
+}
+.projects__heading {
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 0;
   justify-content: space-between;
-  margin: 3rem 0 0 0;
-  &__cards {
-    align-items: center;
-    display: flex;
-    margin: 0 0 0 0;
+  padding-block: 2rem;
+}
+@media (max-width: 1000px) {
+  .projects__heading {
+    padding-block: 2rem;
   }
 }
-.project_info_flex {
-  display: flex;
-  align-items: center;
+.projects__heading--h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
-.icon_profile_flex {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.projects__heading--date {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
-.cards_flex {
+.projects__status {
   display: flex;
-  align-items: center;
-  gap: 7rem;
-  margin: 0 0 5rem 10rem;
-  @include responsive(phone) {
+  gap: 5rem;
+  padding-bottom: 2rem;
+}
+@media (max-width: 1005px) {
+  .projects__status {
+    gap: 1rem;
   }
-  @include responsive(tab-small) {
-    gap: 3rem;
-    margin-left: 7rem;
-  }
-  @media (min-width: 93.5em) and (max-width: 102.25em) {
-    gap: 3rem;
-    margin-left: 10rem;
-  }
-  @media (min-width: 12.5em) and (max-width: 79em) {
-    gap: 3rem;
-    margin-left: 3rem;
-  }
-  @media (min-width: 3em) and (max-width: 62.4em) {
+}
+@media (max-width: 800px) {
+  .projects__status {
     gap: 5rem;
   }
-  @media (min-width: 18.7em) and (max-width: 37.43em) {
-    flex-direction: row;
-    margin-left: 10rem;
-  }
-  @media (min-width: 300px) and (max-width: 400px) {
-    flex-direction: column;
+}
+@media (max-width: 460px) {
+  .projects__status {
+    gap: 2rem;
   }
 }
-.image_button_flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  &--plusicon {
-    width: 2.5rem;
-    height: 2.5rem;
-    fill: $color-progressbar-cyan;
-    &:hover {
-      transform: scale(1.2);
-      cursor: pointer;
-    }
-  }
-  &--button {
-    color: $color-progressbar-cyan;
-    background-color: rgba(86, 217, 240, 0.212);
-    font-family: "Roboto", system-ui;
-    font-weight: 800;
-    font-style: normal;
-    padding: 0.5rem 1.3rem;
-    border-radius: 1.5rem;
-    border: none;
-    &:hover {
-      background-color: rgb(238, 234, 234);
-      cursor: pointer;
-    }
-    @media (min-width: 37.5em) and (max-width: 49.93em) {
-      font-size: 1.8rem;
-    }
-    @media (min-width: 3em) and (max-width: 37.43em) {
-      font-size: 1.5rem;
-    }
-  }
-  &--image {
-    display: flex;
-    align-items: center;
-
-    &--size:first-child {
-      margin: 0 0 0 0;
-    }
-    &--size {
-      width: 2.5rem;
-      height: 2.5rem;
-      border-radius: 50%;
-      margin: 0 0 0 -0.8rem;
-      border: 1px solid white;
-      transition: all 0.3 ease;
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.2);
-        filter: contrast(1.5);
-      }
-    }
+@media (max-width: 370px) {
+  .projects__status {
+    gap: 0.5rem;
   }
 }
-.messages__title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 3.7rem 1rem 1rem 3rem;
-  &__text {
-    font-size: 2.2rem;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  &__iconflex {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    &--searchicon {
-      width: 2.2rem;
-      height: 2.2rem;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
-}
-.title__icon__flex__star2 {
+.projects__status-info:nth-child(4) .projects__status-info--detail::before {
   display: none;
 }
-.messages_card:hover .title__icon__flex__star1 {
-  display: none;
+.projects__status-info--number {
+  font-size: 1.7rem;
+  font-weight: bold;
 }
-.messages_card:hover .title__icon__flex__star2 {
-  display: block;
+.projects__status-info--detail {
+  font-size: 1.2rem;
+  position: relative;
 }
-.messages {
+.projects__status-info--detail::before {
+  height: 0.5rem;
+  aspect-ratio: 1/1;
+  border: 0.2rem solid black;
+  border-radius: 50%;
+  bottom: 0px;
+  right: -50%;
+}
+@media (max-width: 1000px) {
+  .projects__status-info--detail::before {
+    display: none;
+  }
+}
+.projects__status-nav {
   display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  align-items: flex-start !important;
   align-items: center;
-  &_card {
-    display: flex;
-    align-items: center;
-  }
 }
-.title__icon__flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: -0.5rem 2rem 0.7rem 0;
-  width: 28;
-  @media (min-width: 3em) and (max-width: 34.5em) {
-    width: 50rem;
-  }
-  @media (min-width: 34.5em) and (max-width: 37.4em) {
-    width: 80rem;
-  }
-  @media (min-width: 34.5em) and (max-width: 36.3em) {
-    width: 75rem;
-  }
-  @media (min-width: 30.5em) and (max-width: 34.3em) {
-    width: 65rem;
-  }
-  @media (min-width: 21.5em) and (max-width: 26.75em) {
-    width: 50rem;
-  }
-  @media (min-width: 26.75em) and (max-width: 30em) {
-    width: 58rem;
-  }
-  @media (min-width: 500px) and (max-width: 544px) {
-    width: 63rem;
-  }
-  &__title {
-    font-size: 1.7rem;
-    font-family: "Roboto", system-ui;
-    margin: 0;
-    font-style: normal;
-  }
-  &__star1 {
-    width: 1.6rem;
-    height: 1.6rem;
-  }
-}
-.messages {
-  overflow-y: auto;
-  max-height: 100vh;
-  z-index: 99;
-}
-.messages__column {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.messages_card {
-  display: flex;
-  z-index: 99;
-}
-.title__icon__flex:first-child {
-  margin-top: 2rem;
-}
-.title__icon__flex {
-  margin-top: -2rem;
-}
-.title__icon__flex__title {
-  margin-top: -1.5rem;
-}
-.title__icon__flex__star1 {
-  margin-top: -1.5rem;
-}
-.title__icon__flex:first-child {
-  margin-top: 2rem;
-}
-.title__icon__flex1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: -0.5rem 0 0.7rem 0;
-  &__title {
-    font-size: 1.7rem;
-    font-family: "Roboto", system-ui;
-    margin: 2rem 0 0 0;
-    font-style: normal;
-  }
-  &__star1 {
-    width: 1.6rem;
-    height: 1.6rem;
-  }
-}
-.messages_card {
-  transition: all 0.5s ease;
-}
-.messages_card:hover {
+.projects__status-nav--hamburger {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: all 0.3s ease;
+  margin-top:-0.5rem;
   cursor: pointer;
-  background-color: white;
-  transform: scale(1.01) translateY(6px);
-  margin-left: 1.2rem;
-  border-radius: 2rem;
-  border-bottom: none;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  z-index: 9999;
 }
-.messages_card__messages {
-  padding: 0 1.5rem 0 0;
+.projects__status-nav--more {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
-.messages_card1 {
-  display: none;
+.projects__status-nav--more-child {
+  height: 0.7rem;
+  width: 0.7rem;
+  border: 0.3rem solid black;
+  border-radius: 50%;
 }
-.messages_card {
-  z-index: 99999999;
-}
-.phone__view_flex {
+.msgflex {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  @media (min-width: 34.5em) and (max-width: 200em) {
-    .html {
-      font-size: 20%;
-    }
-    .nav__login {
-      display: none;
-    }
-  }
+  gap: 0px;
+  align-items: end;
+  padding: 1.5rem 2rem;
+  height: 6.5rem;
+  border-bottom: 1px solid #939393;
 }
-.nav__login {
-  @media (min-width: 3em) and (max-width: 34.5em) {
-    margin-right: 0;
-  }
+.msgflex h4 {
+  font-size: 2.2rem;
+  font-weight: bold;
 }
-.messages {
-  @media (min-width: 2px) and (max-width: 600px) {
-    width: 100vw;
-  }
+.msgflex--icon {
+  margin-left: auto;
+  height: 2.3rem;
+  width: 2.3rem;
 }
-.messages_card {
-  @media (min-width: 540px) and (max-width: 550px) {
-    width: 100vw;
-  }
+.msgflex--options {
+  right: 2rem;
+  margin-left: 2rem;
+  cursor: pointer;
 }
-.title__icon__flex {
-  @media (min-width: 500px) and (max-width: 544px) {
-    width: 70rem;
-  }
-  @media (min-width: 465px) and (max-width: 490px) {
-    width: 65rem;
-  }
-  @media (min-width: 350px) and (max-width: 400px) {
-    width: 55rem;
-  }
-  @media (min-width: 314px) and (max-width: 344px) {
-    width: 55rem;
-  }
-  @media (min-width: 550px) and (max-width: 546px) {
-    width: 65rem;
-  }
+.msgflex--options-dot {
+  height: 0.7rem;
+  aspect-ratio: 1/1;
+  background: black;
+  border-radius: 50%;
+  margin-bottom: 0.3rem;
 }
